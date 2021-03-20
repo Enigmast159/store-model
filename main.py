@@ -1,16 +1,19 @@
-# This is a sample Python script.
+from flask import Flask, render_template, redirect, request, abort
+from flask_ngrok import run_with_ngrok
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'my_secret_key'
+run_with_ngrok(app)
 
 
-# Press the green button in the gutter to run the script.
+@app.route('/')
+def index():
+    return render_template('base.html', title='Shop on the coach')
+
+
+def main():
+    app.run()
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
