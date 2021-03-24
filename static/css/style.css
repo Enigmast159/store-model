@@ -9,10 +9,11 @@ body {
 .header {
     width: 100%;
     padding-top: 30px;
-    background-image: url("https://media.discordapp.net/attachments/679635085712293918/822805213206544394/pepe.gif?width=490&height=490") center no-repeat;
-    background-size: 100%;
+    background-image: url('../img/pepe.gif');
+    background-repeat: repeat;
+    background-size: contain;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -103,7 +104,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url("https://media.discordapp.net/attachments/679635085712293918/822805213206544394/pepe.gif?width=490&height=490") center no-repeat;
+    background-color: black;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -169,16 +170,16 @@ body {
 /* content */
 .content {
     width: 100vw;
-    height: 80vh;
+    height: 30vh;
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .content__text {
     font-family: 'Kaushan Script', cursive;
-    color: green;
+    color: white;
     text-transform: uppercase;
 }
 
