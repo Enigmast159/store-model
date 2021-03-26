@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect, request, abort, url_for
+from data.db_session import global_init, create_session
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_secret_key'
@@ -11,6 +12,7 @@ def index():
 
 
 def main():
+    global_init("db/trading_area.db")
     app.run(port=8080)
 
 
