@@ -5,10 +5,11 @@
     <h1 class="intro__title">О проекте</h1>
     <p class="intro__inner display-6">Здесь вы можете найти информацию о нашем проекте</p>
 </div>
-<!--<div>-->
-<!--    <p class="intro__suptitle display-5 m-3">Данный проект представляет собой некую модель магазина, где можно зарегестрироваться и войти,-->
-<!--    а также добавить покупки в корзину и добавлять новые продаваемые предметы.</p>-->
-<!--</div>-->
+<div class="section__header mt-5">
+    <h3 class="section__suptitle">About project</h3>
+    <h2 class="section__title m-3">Данный проект представляет собой некую модель магазина, где можно зарегестрироваться и войти,
+    а также добавить покупки в корзину и добавлять новые продаваемые предметы.</h2>
+</div>
 <section class="section">
     <div class="container">
 
@@ -16,11 +17,46 @@
             <h3 class="section__suptitle">Who we are</h3>
             <h2 class="section__title">Встречайте нашу команду</h2>
             <div class="section__text">
-                <p>Наша команда каждый день усердно трудится, чтобы вы всегда были довольны результатом. </p>
+                <p>Наша команда усердно трудилась, чтобы вы всегда были довольны результатом. </p>
             </div>
         </div>
 
-    </div><!-- /.container -->
+        <section class="section m-0 p-0">
+        <div class="card">
+            <div class="card__inner">
+                <div class="card__img p-3">
+                    <img src="{{ url_for('static', filename='img/pepe.gif')}}">
+                </div>
+                <div class="card__info">
+                        <div class="card__name">Савин Григорий</div>
+                        <div class="card__prof">Разработчик</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__inner">
+                <div class="card__img p-3">
+                    <img src="{{ url_for('static', filename='img/pepe.gif')}}">
+                </div>
+                <div class="card__info">
+                        <div class="card__name">Лямин Дмитрий</div>
+                        <div class="card__prof">Разработчик</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__inner">
+                <div class="card__img p-3">
+                    <img src="{{ url_for('static', filename='img/pepe.gif')}}">
+                </div>
+                <div class="card__info">
+                        <div class="card__name">Гуреев матвей</div>
+                        <div class="card__prof">Разработчик</div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
 </section>
 
 {% endblock %}
