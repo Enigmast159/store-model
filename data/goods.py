@@ -6,8 +6,10 @@ from .db_session import SqlAlchemyBase
 class Goods(SqlAlchemyBase):
     __tablename__ = 'goods'
 
-    id = sqlalchemy.Column(sqlalchemy.Integer,
-                           primary_key=True, autoincrement=True)
+    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
+    seller_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("users.id"))
+    seller = orm.relation('User')
+    price = sqlalchemy.Column(sqlalchemy.Integer, nullable=True)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     about = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     class_name = sqlalchemy.Column(sqlalchemy.String, nullable=True)

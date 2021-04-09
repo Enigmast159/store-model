@@ -18,7 +18,7 @@ class User(SqlAlchemyBase, UserMixin):
     hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     created_date = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.now)
     birthdate = sqlalchemy.Column(sqlalchemy.DateTime, default=datetime.datetime.date)
-    orders = orm.relation("Order", back_populates='user')
+    goods = orm.relation("Goods", back_populates='seller')
 
     def set_password(self, password):
         self.hashed_password = generate_password_hash(password)

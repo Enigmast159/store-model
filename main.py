@@ -1,10 +1,12 @@
 from flask import Flask, render_template, redirect, request, abort, url_for
 from forms.registration import RegisterForm
 from forms.login import LoginForm
+from forms.add_goods import AddGoods
 from data.db_session import global_init, create_session
 from data import db_session
 from data.users import User
-from flask_login import LoginManager, login_user, logout_user, login_required
+from data.goods import Goods
+from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 import datetime
 
 app = Flask(__name__)
@@ -73,6 +75,32 @@ def login():
 def logout():
     logout_user()
     return redirect("/")
+
+
+@app.route('/catalog')
+@login_required
+def catalog():
+    return render_template('catalog.html', title='Каталог')
+
+
+@app.route('/add_goods', methods=['GET', 'POST'])
+@login_required
+def add_goods():
+    form = AddGoods()
+    if form.validate_on_submit():
+        db_sess = db_session.create_session()
+        goods = Goods(
+            name=form.name.data,
+            about=form.about.data,
+            weight=form.weight.data,
+            size=form.size.data,
+            price=form.price.data
+        )
+        current_user.goods.append(goods)
+        db_sess.merge(current_user)
+        db_sess.commit()
+        return redirect('/catalog')
+    return render_template('add_goods.html', title='Добавление товара', form=form)
 
 
 def main():
