@@ -1,4 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
+<a class="btn btn-outline-dark m-5 mb-0 mt-2" href="/add_goods">Добавить товар</a>
+<section class="section m-3 mt-0">
+{% for item in goods %}
+    <a href='/goods/{{item.id}}' class="card mt-0" style="text-decoration: none;">
+        <div class="card__inner">
+            <div class="card__img p-3">
+                <img src="{{ url_for('static', filename='img/pepe.gif')}}">
+            </div>
+            <div class="card__info">
+                    <div class="card__name">{{item.name}}</div>
+                    <div class="card__prof">Продавец: {{item.seller.name}} {{item.seller.surname}}</div>
+                    <div class="card__prof">{{item.price}}$</div>
+            </div>
+        </div>
+    </a>
+{% endfor %}
+</section>
 {% endblock %}

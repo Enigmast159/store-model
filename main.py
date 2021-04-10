@@ -80,7 +80,9 @@ def logout():
 @app.route('/catalog')
 @login_required
 def catalog():
-    return render_template('catalog.html', title='Каталог')
+    db_sess = db_session.create_session()
+    goods = db_sess.query(Goods).all()
+    return render_template('catalog.html', title='Каталог', goods=goods)
 
 
 @app.route('/add_goods', methods=['GET', 'POST'])
