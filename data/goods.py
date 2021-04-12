@@ -15,4 +15,3 @@ class Goods(SqlAlchemyBase):
     class_name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     weight = sqlalchemy.Column(sqlalchemy.Integer, default=0)
     size = sqlalchemy.Column(sqlalchemy.Integer, default=0)
-    orders = orm.relation("Order", back_populates='product')

@@ -105,6 +105,49 @@ def add_goods():
     return render_template('add_goods.html', title='Добавление товара', form=form)
 
 
+@app.route('/delete_goods/<int:id>', methods=['GET', 'POST'])
+@login_required
+def delete_goods(id):
+    db_sess = db_session.create_session()
+    goods = db_sess.query(Goods).filter(Goods.id == id).first()
+    if goods:
+        db_sess.delete(goods)
+        db_sess.commit()
+    else:
+        abort(404)
+    return redirect('/catalog')
+
+
+@app.route('/edit_goods/<int:id>', methods=['GET', 'POST'])
+@login_required
+def edit_goods(id):
+    form = AddGoods()
+    session = db_session.create_session()
+    goods = session.query(Goods).filter(Goods.id == id, Goods.seller == current_user).first()
+    if request.method == 'GET':
+        if goods:
+            form.name.data = goods.name
+            form.about.data = goods.about
+            form.price.data = goods.price
+            form.weight.data = goods.weight
+            form.size.data = goods.size
+        else:
+            abort(404)
+    if form.validate_on_submit():
+        if goods:
+            goods.name = form.name.data
+            goods.about = form.about.data
+            goods.price = form.price.data
+            goods.weight = form.weight.data
+            goods.size = form.size.data
+            session.merge(goods)
+            session.commit()
+            return redirect('/catalog')
+        else:
+            abort(404)
+    return render_template('add_goods.html', title='Редактирование товара', form=form)
+
+
 def main():
     global_init("db/trading_area.db")
     app.run(port=8080)
