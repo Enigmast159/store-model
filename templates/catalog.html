@@ -5,7 +5,7 @@
 <section class="section m-3 mt-0">
 {% for item in goods %}
     <div class="sub__card">
-    <a href='/goods/{{item.id}}' class="card mt-0 mb-2" style="text-decoration: none;">
+    <a href='/item_page/{{item.id}}' class="card mt-0 mb-2" style="text-decoration: none;">
         <div class="card__inner">
             <div class="card__img p-3">
                 <img src="{{ url_for('static', filename='img/pepe.gif')}}">

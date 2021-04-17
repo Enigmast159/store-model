@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="section">
+    <img src="{{url_for('static', filename='img/pepe.gif')}}">
+    <div class="cont">
+        <p class="section__title">{{item.name}}</p>
+        <p class="section__suptitle">Описание: {{item.about}}</p>
+        <p class="section__suptitle">Размеры: {{item.size}}</p>
+        <p class="section__suptitle">Вес: {{item.weight}}</p>
+        <a class="btn btn-outline-success">Купить</a>
+    </div>
+</div>
+<div class="section">
+    {% for comm in comments %}
+
+    {% endfor %}
+</div>
+{% endblock %}

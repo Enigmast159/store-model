@@ -9,7 +9,7 @@ from data.users import User
 from data.goods import Goods
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 import datetime
-from .data import goods_resource, order_resource, user_resource
+from data import goods_resource, order_resource, user_resource
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_secret_key'
@@ -18,8 +18,8 @@ api = Api(app)
 api.add_resource(goods_resource.GoodsListResource, '/api/goods')
 api.add_resource(
     goods_resource.GoodsResource,
-    '/api/good/<int:id>/<int:seller_id>/<int:price>/'
-    '<str:name>/<str:about>/<str:class_name>/<int:weught>/<str:size>')
+    '/api/good/<int:id>/<int:seller_id>/<int:price>/' +
+    '<string:name>/<string:about>/<string:class_name>/<int:weight>/<string:size>')
 
 api.add_resource(order_resource.OrderListResource, '/api/orders')
 api.add_resource(
@@ -29,8 +29,8 @@ api.add_resource(
 api.add_resource(user_resource.UsersListResource, '/api/users')
 api.add_resource(
     user_resource.UserResource,
-    '/api/user/<int:id>/<str:name>/<str:surname>/<str:email>/'
-    '<str:about>/<str:hashed_password>/<str:created_date>/<str:birthdate>')
+    '/api/user/<int:id>/<string:name>/<string:surname>/<string:email>/' +
+    '<string:about>/<string:hashed_password>/<string:created_date>/<string:birthdate>')
 login_manager = LoginManager()
 login_manager.init_app(app)
 
@@ -166,6 +166,22 @@ def edit_goods(id):
         else:
             abort(404)
     return render_template('add_goods.html', title='Редактирование товара', form=form)
+
+
+@app.route('/item_page/<int:id>')
+@login_required
+def item_page(id):
+    db_sess = db_session.create_session()
+    item = db_sess.query(Goods).get(id)
+    return render_template('item_page.html', item=item, title=f'Товар: {item.name}')
+
+
+@app.route('/user_page/<int:id>')
+@login_required
+def item_page(id):
+    db_sess = db_session.create_session()
+    user = db_sess.query(User).get(id)
+    return render_template('item_page.html', item=user, title=f'Товар: {user.name}')
 
 
 def main():

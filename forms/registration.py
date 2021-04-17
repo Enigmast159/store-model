@@ -12,4 +12,4 @@ class RegisterForm(FlaskForm):
     password_again = PasswordField('Повторите пароль', validators=[DataRequired()])
     bdate = DateField('Дата рождения', validators=[DataRequired()])
     about = TextAreaField("Немного о себе")
-    submit = SubmitField('Войти')
+    submit = SubmitField('Готово')
