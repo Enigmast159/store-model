@@ -4,11 +4,14 @@
 <div class="section">
     <img src="{{url_for('static', filename='img/pepe.gif')}}">
     <div class="cont">
-        <p class="section__title">{{item.name}}</p>
-        <p class="section__suptitle">Описание: {{item.about}}</p>
-        <p class="section__suptitle">Размеры: {{item.size}}</p>
-        <p class="section__suptitle">Вес: {{item.weight}}</p>
-        <a class="btn btn-outline-success">Изменить</a>
+        <p class="section__title">{{item.name}} {{item.surname}}</p>
+        <p class="section__suptitle">О себе: {{item.about}}</p>
+        <p class="section__suptitle">Почта: {{item.email}}</p>
+        <p class="section__suptitle">Дата рождения: {{item.birthdate}}</p>
+        <p class="section__suptitle">Дата создания аккаунта: {{item.created_date}}</p>
+        {% if current_user == item %}
+        <a href="/edit_user/{{item.id}}" class="btn btn-outline-success">Изменить</a>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

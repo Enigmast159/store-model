@@ -97,6 +97,38 @@ def logout():
     return redirect("/")
 
 
+@app.route('/edit_user/<int:id>', methods=['POST', 'GET'])
+@login_required
+def edit_user(id):
+    form = RegisterForm()
+    session = db_session.create_session()
+    user = session.query(User).get(id)
+    if request.method == 'GET':
+        if user:
+            form.name.data = user.name
+            form.surname.data = user.surname
+            form.about.data = user.about
+            form.bdate.data = user.birthdate
+            form.email.data = user.email
+            form.password.data = ''
+        else:
+            abort(404)
+    if form.validate_on_submit():
+        if user:
+            user.name = form.name.data
+            user.surname = form.surname.data
+            user.about = form.about.data
+            user.email = form.email.data
+            user.bdate = form.bdate.data
+            user.set_password(form.password.data)
+            session.merge(user)
+            session.commit()
+            return redirect(f'/user_page/{id}')
+        else:
+            abort(404)
+    return render_template('register.html', title='Редактирование профиля', form=form)
+
+
 @app.route('/catalog')
 @login_required
 def catalog():
@@ -178,10 +210,11 @@ def item_page(id):
 
 @app.route('/user_page/<int:id>')
 @login_required
-def item_page(id):
+def user_page(id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(id)
-    return render_template('item_page.html', item=user, title=f'Товар: {user.name}')
+    return render_template('user_page.html', item=user,
+                           title=f'Пользователь: {user.name} {user.surname}')
 
 
 def main():
