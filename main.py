@@ -6,10 +6,11 @@ from flask_restful import Api
 from data.db_session import global_init, create_session
 from data import db_session
 from data.users import User
+from data.comments import Comment
 from data.goods import Goods
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 import datetime
-from data import goods_resource, order_resource, user_resource
+from data import goods_resource, order_resource, user_resource, comments_resource
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_secret_key'
@@ -31,6 +32,11 @@ api.add_resource(
     user_resource.UserResource,
     '/api/user/<int:id>/<string:name>/<string:surname>/<string:email>/' +
     '<string:about>/<string:hashed_password>/<string:created_date>/<string:birthdate>')
+
+api.add_resource(comments_resource.CommentListResource, '/api/comments')
+api.add_resource(
+    comments_resource.CommentResource,
+    '/api/comment/<int:id>/<int:goods_id>/<string:message>')
 login_manager = LoginManager()
 login_manager.init_app(app)
 
@@ -95,38 +101,6 @@ def login():
 def logout():
     logout_user()
     return redirect("/")
-
-
-@app.route('/edit_user/<int:id>', methods=['POST', 'GET'])
-@login_required
-def edit_user(id):
-    form = RegisterForm()
-    session = db_session.create_session()
-    user = session.query(User).get(id)
-    if request.method == 'GET':
-        if user:
-            form.name.data = user.name
-            form.surname.data = user.surname
-            form.about.data = user.about
-            form.bdate.data = user.birthdate
-            form.email.data = user.email
-            form.password.data = ''
-        else:
-            abort(404)
-    if form.validate_on_submit():
-        if user:
-            user.name = form.name.data
-            user.surname = form.surname.data
-            user.about = form.about.data
-            user.email = form.email.data
-            user.bdate = form.bdate.data
-            user.set_password(form.password.data)
-            session.merge(user)
-            session.commit()
-            return redirect(f'/user_page/{id}')
-        else:
-            abort(404)
-    return render_template('register.html', title='Редактирование профиля', form=form)
 
 
 @app.route('/catalog')
@@ -213,8 +187,7 @@ def item_page(id):
 def user_page(id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(id)
-    return render_template('user_page.html', item=user,
-                           title=f'Пользователь: {user.name} {user.surname}')
+    return render_template('item_page.html', item=user, title=f'Товар: {user.name}')
 
 
 def main():
