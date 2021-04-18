@@ -125,6 +125,7 @@ def add_goods():
             size=form.size.data,
             price=form.price.data
         )
+        print(form.photo.data.read())  # -- получение файла из формы
         current_user.goods.append(goods)
         db_sess.merge(current_user)
         db_sess.commit()
@@ -221,4 +222,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()a
+    main()

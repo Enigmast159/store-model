@@ -3,7 +3,7 @@
 {% block content %}
 <h1>Добавление товара</h1>
 <p>{{text}}</p>
-    <form action="" method="post" class="m-5 mt-3">
+    <form action="" method="post" class="m-5 mt-3" enctype="multipart/form-data">
         {{ form.hidden_tag() }}
         <p>
             {{ form.name.label }}<br>
