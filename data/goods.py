@@ -9,6 +9,7 @@ class Goods(SqlAlchemyBase):
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     seller_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("users.id"))
     seller = orm.relation('User')
+    comments = orm.relation('Comment', back_populates='goods')
     price = sqlalchemy.Column(sqlalchemy.Integer, nullable=True)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     about = sqlalchemy.Column(sqlalchemy.String, nullable=True)

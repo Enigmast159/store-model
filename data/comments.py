@@ -9,4 +9,6 @@ class Comment(SqlAlchemyBase):
     id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
     goods_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("goods.id"))
     goods = orm.relation('Goods')
+    commentator_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("users.id"))
+    commentator = orm.relation('User')
     message = sqlalchemy.Column(sqlalchemy.String, nullable=True)

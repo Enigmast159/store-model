@@ -11,9 +11,23 @@
         <a class="btn btn-outline-success">Купить</a>
     </div>
 </div>
-<div class="section">
+<div class="container">
+    <h2>Комментарии: </h2>
+    <a href="/add_comm/{{item.id}}" class="btn btn-outline-dark mt-3">Написать комментарий</a>
     {% for comm in comments %}
-
+        <div class="col-md6 border rounded mt-3">
+            <div>
+                {{comm.message}}
+            </div>
+            <div>
+                Автор - {{comm.commentator.name}} {{comm.commentator.surname}}
+            </div>
+            {% if current_user.is_authenticated and current_user == comm.commentator %}
+                <div>
+                    <a href="/comment_delete/{{item.id}}" class="btn btn-outline-danger mt-3">Удалить</a>
+                </div>
+            {% endif %}
+        </div>
     {% endfor %}
 </div>
 {% endblock %}

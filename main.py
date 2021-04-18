@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, abort, url_for
 from forms.registration import RegisterForm
 from forms.login import LoginForm
 from forms.add_goods import AddGoods
+from forms.comm import AddComms
 from flask_restful import Api
 from data.db_session import global_init, create_session
 from data import db_session
@@ -174,12 +175,15 @@ def edit_goods(id):
     return render_template('add_goods.html', title='Редактирование товара', form=form)
 
 
-@app.route('/item_page/<int:id>')
+@app.route('/item_page/<int:id>', methods=['POST', 'GET'])
 @login_required
 def item_page(id):
+    form = AddComms()
     db_sess = db_session.create_session()
     item = db_sess.query(Goods).get(id)
-    return render_template('item_page.html', item=item, title=f'Товар: {item.name}')
+    comms = db_sess.query(Comment).filter(Comment.goods == item).all()
+    return render_template('item_page.html', item=item, title=f'Товар: {item.name}',
+                           comments=comms, form=form)
 
 
 @app.route('/user_page/<int:id>')
@@ -187,7 +191,28 @@ def item_page(id):
 def user_page(id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(id)
-    return render_template('item_page.html', item=user, title=f'Товар: {user.name}')
+    return render_template('user_page.html', item=user, title=f'Товар: {user.name}')
+
+
+@app.route('/add_comm/<int:id>', methods=['POST', 'GET'])
+@login_required
+def add_comm(id):
+    form = AddComms()
+    if form.validate_on_submit():
+        db_sess = db_session.create_session()
+        item = db_sess.query(Goods).get(id)
+        comm = Comment(
+            commentator=current_user,
+            message=form.name.data,
+            goods=item
+        )
+        item.comments.append(comm)
+        db_sess.merge(item)
+        current_user.comments.append(comm)
+        db_sess.merge(current_user)
+        db_sess.commit()
+        return redirect('/catalog')
+    return render_template('add_comm.html', title='Вы пишете комментарий', form=form)
 
 
 def main():
