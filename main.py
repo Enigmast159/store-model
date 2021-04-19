@@ -183,6 +183,17 @@ def item_page(id):
     db_sess = db_session.create_session()
     item = db_sess.query(Goods).get(id)
     comms = db_sess.query(Comment).filter(Comment.goods == item).all()
+    if form.validate_on_submit():
+        comm = Comment(
+            commentator_id=current_user.id,
+            message=form.name.data,
+            goods_id=item.id
+        )
+        db_sess.add(comm)
+        db_sess.commit()
+        comms = db_sess.query(Comment).filter(Comment.goods == item).all()
+        return render_template('item_page.html', item=item, title=f'Товар: {item.name}',
+                               comments=comms, form=form)
     return render_template('item_page.html', item=item, title=f'Товар: {item.name}',
                            comments=comms, form=form)
 
