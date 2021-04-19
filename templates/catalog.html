@@ -8,7 +8,7 @@
     <a href='/item_page/{{item.id}}' class="card mt-0 mb-2" style="text-decoration: none;">
         <div class="card__inner">
             <div class="card__img p-3">
-                <img src="{{ url_for('static', filename='img/pepe.gif')}}">
+                <img src="{{ url_for('static', filename='img/goods_img/{}'.format(item.photo_id))}}">
             </div>
             <div class="card__info">
                     <div class="card__name">{{item.name}}</div>

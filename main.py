@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect, request, abort, url_for
+from json import dump, load
 from forms.registration import RegisterForm
 from forms.login import LoginForm
 from forms.add_goods import AddGoods
@@ -78,6 +79,18 @@ def reqister():
         user.set_password(form.password.data)
         db_sess.add(user)
         db_sess.commit()
+        name = str(form.photo.data)
+        name = name.split('.')[-1].split("'")[0]
+        text = form.photo.data.read()
+        user = db_sess.query(User).all()[-1]
+        if str(text) == "b''":
+            user.photo_id = 'pepe.gif'
+        else:
+            user.photo_id = f'{user.id}.{name}'
+            with open(f'static/img/goods_img/{user.photo_id}', 'wb') as f:
+                f.write(text)
+        db_sess.merge(user)
+        db_sess.commit()
         return redirect('/login')
     return render_template('register.html', title='Регистрация', form=form)
 
@@ -125,9 +138,20 @@ def add_goods():
             size=form.size.data,
             price=form.price.data
         )
-        print(form.photo.data.read())  # -- получение файла из формы
         current_user.goods.append(goods)
         db_sess.merge(current_user)
+        db_sess.commit()
+        name = str(form.photo.data)
+        name = name.split('.')[-1].split("'")[0]
+        text = form.photo.data.read()
+        goods = db_sess.query(Goods).all()[-1]
+        if str(text) == "b''":
+            goods.photo_id = 'pepe.gif'
+        else:
+            goods.photo_id = f'{goods.id}.{name}'
+            with open(f'static/img/goods_img/{goods.photo_id}', 'wb') as f:
+                f.write(text)
+        db_sess.merge(goods)
         db_sess.commit()
         return redirect('/catalog')
     return render_template('add_goods.html', title='Добавление товара', form=form)
@@ -204,27 +228,6 @@ def user_page(id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(id)
     return render_template('user_page.html', item=user, title=f'Товар: {user.name}')
-
-
-@app.route('/add_comm/<int:id>', methods=['POST', 'GET'])
-@login_required
-def add_comm(id):
-    form = AddComms()
-    if form.validate_on_submit():
-        db_sess = db_session.create_session()
-        item = db_sess.query(Goods).get(id)
-        comm = Comment(
-            commentator=current_user,
-            message=form.name.data,
-            goods=item
-        )
-        item.comments.append(comm)
-        db_sess.merge(item)
-        current_user.comments.append(comm)
-        db_sess.merge(current_user)
-        db_sess.commit()
-        return redirect('/catalog')
-    return render_template('add_comm.html', title='Вы пишете комментарий', form=form)
 
 
 def main():
