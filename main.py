@@ -12,6 +12,7 @@ from data.users import User
 from data.comments import Comment
 from data.goods import Goods
 from data.category import Category
+from data.orders import Order
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 import datetime
 from data import goods_resource, order_resource, user_resource, comments_resource
@@ -252,6 +253,19 @@ def user_page(id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(id)
     return render_template('user_page.html', item=user, title=f'Товар: {user.name}')
+
+
+@app.route('/make_order/<int:customer_id>/<int:goods_id>')
+@login_required
+def add_goods(customer_id, goods_id):
+    db_sess = db_session.create_session()
+    order = Order(
+        id=len(db_sess.query(Order)) + 1,
+        customer_id=customer_id,
+        goods_id=goods_id
+    )
+    db_sess.add(order)
+    db_sess.commit()
 
 
 def main():
