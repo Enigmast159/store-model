@@ -2,6 +2,33 @@
 
 {% block content %}
 <a class="btn btn-outline-dark m-5 mb-0 mt-2" href="/add_goods">Добавить товар</a>
+<form action="" method="post" class="m-5 mt-3">
+    {{ form.hidden_tag() }}
+    {{ form.csrf_token }}
+    <p>
+        {{ form.category.label }}<br>
+        {{ form.category(class="form-control") }}<br>
+        {% for error in form.category.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </p>
+    <p>
+        {% for subfield in form.price %}
+                <td>{{ subfield }}</td>
+                <td>{{ subfield.label }}</td>
+            </tr>
+        {% endfor %}
+        {% for error in form.price.errors %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit(type="submit", class="btn btn-outline-dark") }}</p>
+    <div>{{ message }}</div>
+</form>
 <section class="section m-3 mt-0">
 {% for item in goods %}
     <div class="sub__card">

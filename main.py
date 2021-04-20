@@ -4,12 +4,14 @@ from forms.registration import RegisterForm
 from forms.login import LoginForm
 from forms.add_goods import AddGoods
 from forms.comm import AddComms
+from forms.sort import Sort
 from flask_restful import Api
 from data.db_session import global_init, create_session
 from data import db_session
 from data.users import User
 from data.comments import Comment
 from data.goods import Goods
+from data.category import Category
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 import datetime
 from data import goods_resource, order_resource, user_resource, comments_resource
@@ -117,26 +119,46 @@ def logout():
     return redirect("/")
 
 
-@app.route('/catalog')
+@app.route('/catalog', methods=['POST', 'GET'])
 @login_required
 def catalog():
     db_sess = db_session.create_session()
+    form = Sort()
+    items = db_sess.query(Category).all()
+    form.category.choices = [(item.id + 1, item.name) for item in items]
+    form.category.choices.append((1, 'Все'))
+    form.category.choices = form.category.choices[::-1]
     goods = db_sess.query(Goods).all()
-    return render_template('catalog.html', title='Каталог', goods=goods)
+    if form.validate_on_submit():
+        print(form.category.data)
+        if form.category.data == '1':
+            goods = db_sess.query(Goods).all()
+        else:
+            goods = db_sess.query(Goods).filter(Goods.category_id == int(form.category.data) - 1
+                                                ).all()
+        if form.price.data == '1':
+            goods = sorted(goods, key=lambda x: x.price)
+        elif form.price.data == '2':
+            goods = sorted(goods, key=lambda x: x.price)[::-1]
+        return render_template('catalog.html', title='Каталог', goods=goods, form=form)
+    return render_template('catalog.html', title='Каталог', goods=goods, form=form)
 
 
 @app.route('/add_goods', methods=['GET', 'POST'])
 @login_required
 def add_goods():
     form = AddGoods()
+    db_sess = db_session.create_session()
+    items = db_sess.query(Category).all()
+    form.select.choices = [(item.id, item.name) for item in items]
     if form.validate_on_submit():
-        db_sess = db_session.create_session()
         goods = Goods(
             name=form.name.data,
             about=form.about.data,
             weight=form.weight.data,
             size=form.size.data,
-            price=form.price.data
+            price=form.price.data,
+            category_id=form.select.data
         )
         current_user.goods.append(goods)
         db_sess.merge(current_user)
@@ -183,6 +205,7 @@ def edit_goods(id):
             form.price.data = goods.price
             form.weight.data = goods.weight
             form.size.data = goods.size
+            form.select.data = goods.category_id
         else:
             abort(404)
     if form.validate_on_submit():
@@ -192,6 +215,7 @@ def edit_goods(id):
             goods.price = form.price.data
             goods.weight = form.weight.data
             goods.size = form.size.data
+            goods.category_id = form.select.data
             session.merge(goods)
             session.commit()
             return redirect('/catalog')
