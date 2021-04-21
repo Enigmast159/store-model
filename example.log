@@ -1,0 +1,4 @@
+2021-04-21 22:03:05,382 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-04-21 22:03:35,716 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-21 22:03:46,489 INFO werkzeug  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2021-04-21 22:04:17,791 INFO werkzeug  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
