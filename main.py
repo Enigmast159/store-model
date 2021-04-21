@@ -15,6 +15,7 @@ from data.orders import Order
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 import datetime
 from data import goods_resource, order_resource, user_resource, comments_resource
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_secret_key'
@@ -322,7 +323,8 @@ def make_order(customer_id, goods_id):
 
 def main():
     global_init("db/trading_area.db")
-    app.run(port=8080)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
 if __name__ == '__main__':
