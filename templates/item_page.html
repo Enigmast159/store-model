@@ -8,7 +8,7 @@
         <p class="section__suptitle">Описание: {{item.about}}</p>
         <p class="section__suptitle">Размеры: {{item.size}}</p>
         <p class="section__suptitle">Вес: {{item.weight}}</p>
-        <a class="btn btn-outline-success">Купить</a>
+        <a class="btn btn-outline-success" href="/make_order/{{current_user.id}}/{{item.id}}">Купить</a>
     </div>
 </div>
 <div class="container">
