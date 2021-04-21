@@ -16,7 +16,12 @@ from flask_login import LoginManager, login_user, logout_user, login_required, c
 import datetime
 from data import goods_resource, order_resource, user_resource, comments_resource
 import os
+import logging
 
+logging.basicConfig(level=logging.INFO,
+                    filename='example.log',
+                    format='%(asctime)s %(levelname)s %(name)s %(message)s'
+                    )
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'my_secret_key'
 api = Api(app)
@@ -321,11 +326,6 @@ def make_order(customer_id, goods_id):
     return redirect('/catalog')
 
 
-def main():
-    global_init("db/trading_area.db")
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='127.0.0.1', port=port)
-
-
 if __name__ == '__main__':
-    main()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
