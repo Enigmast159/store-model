@@ -89,12 +89,50 @@ def reqister():
             user.photo_id = 'pepe.gif'
         else:
             user.photo_id = f'{user.id}.{name}'
-            with open(f'static/img/goods_img/{user.photo_id}', 'wb') as f:
+            with open(f'static/img/user_img/{user.photo_id}', 'wb') as f:
                 f.write(text)
         db_sess.merge(user)
         db_sess.commit()
         return redirect('/login')
     return render_template('register.html', title='Регистрация', form=form)
+
+
+@app.route('/edit_user/<int:id>', methods=['POST', 'GET'])
+@login_required
+def edit_user(id):
+    form = RegisterForm()
+    session = db_session.create_session()
+    user = session.query(User).filter(User.id == id).first()
+    if request.method == 'GET':
+        if user:
+            form.name.data = user.name
+            form.surname.data = user.surname
+            form.about.data = user.about
+            form.email.data = user.email
+            form.bdate.data = user.birthdate
+        else:
+            abort(404)
+    if form.validate_on_submit():
+        if user:
+            user.name = form.name.data
+            user.surname = form.surname.data
+            user.email = form.email.data
+            user.about = form.about.data
+            user.birthdate = form.bdate.data
+            text = form.photo.data.read()
+            if not (str(text) == "b''"):
+                name = str(form.photo.data)
+                name = name.split('.')[-1].split("'")[0]
+                user.photo_id = f'{user.id}.{name}'
+                with open(f'static/img/user_img/{user.photo_id}', 'wb') as f:
+                    f.write(text)
+            session.merge(user)
+            session.commit()
+            return redirect(f'/user_page/{id}')
+        else:
+            abort(404)
+    msg = 'Вы можете редактировать только эти поля: имя, фамилия, почта, дата рождения, фото'
+    return render_template('register.html', title='Редактирование профиля', form=form, msg=msg)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -246,12 +284,26 @@ def item_page(goods_id):
                            comments=comms, form=form)
 
 
+@app.route('/comment_delete/<int:id>/<int:g_id>', methods=['POST', 'GET'])
+@login_required
+def comment_delete(id, g_id):
+    db_sess = db_session.create_session()
+    comm = db_sess.query(Comment).get(id)
+    if comm:
+        db_sess.delete(comm)
+        db_sess.commit()
+    else:
+        abort(404)
+    return redirect(f'/item_page/{g_id}')
+
+
 @app.route('/user_page/<int:user_id>')
 @login_required
 def user_page(user_id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(user_id)
-    return render_template('user_page.html', item=user, title=f'Товар: {user.name}')
+    orders = db_sess.query(Order).filter(Order.customer == user).all()
+    return render_template('user_page.html', item=user, title=f'Товар: {user.name}', orders=orders)
 
 
 @app.route('/make_order/<int:customer_id>/<int:goods_id>')

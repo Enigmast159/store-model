@@ -29,16 +29,16 @@
         <div>{{ message }}</div>
     </form>
     {% for comm in comments %}
-        <div class="col-md6 border rounded mt-3">
+        <div class="col-md6 border rounded mt-3 p-2">
             <div>
                 {{comm.message}}
             </div>
             <div>
-                Автор - {{comm.commentator.name}} {{comm.commentator.surname}}
+                <a href="/user_page/{{comm.commentator_id}}">Автор - {{comm.commentator.name}} {{comm.commentator.surname}}</a>
             </div>
             {% if current_user.is_authenticated and current_user == comm.commentator %}
                 <div>
-                    <a href="/comment_delete/{{item.id}}" class="btn btn-outline-danger mt-3">Удалить</a>
+                    <a href="/comment_delete/{{comm.id}}/{{item.id}}" class="btn btn-outline-danger mt-3">Удалить</a>
                 </div>
             {% endif %}
         </div>

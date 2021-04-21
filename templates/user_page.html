@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="section">
-    <img src="{{ url_for('static', filename='img/goods_img/{}'.format(item.photo_id))}}">
+    <img src="{{ url_for('static', filename='img/user_img/{}'.format(item.photo_id))}}">
     <div class="cont">
         <p class="section__title">{{item.name}} {{item.surname}}</p>
         <p class="section__suptitle">О себе: {{item.about}}</p>
@@ -13,5 +13,22 @@
         <a href="/edit_user/{{item.id}}" class="btn btn-outline-success">Изменить</a>
         {% endif %}
     </div>
+</div>
+<div class="container">
+    {% if current_user == item %}
+    <h2>Заказы: </h2>
+    {% for order in orders %}
+        <div class="col-md6 border rounded mt-3 p-2">
+            <h2>
+                Заказ №{{order.id}}
+            </h2>
+            <div>
+                <p>Покупатель - {{order.customer.name}} {{order.customer.surname}}</p>
+                <p>Продавец - <a href="/user_page/{{order.product.seller.id}}">{{order.product.seller.name}} {{order.product.seller.surname}}</a></p>
+                <p>Товар: <a href="/item_page/{{order.product.id}}">{{order.product.name}}</a></p>
+            </div>
+        </div>
+    {% endfor %}
+    {% endif %}
 </div>
 {% endblock %}
