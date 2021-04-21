@@ -17,5 +17,5 @@ class Goods(SqlAlchemyBase, SerializerMixin):
     price = sqlalchemy.Column(sqlalchemy.Integer, nullable=True)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     about = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    weight = sqlalchemy.Column(sqlalchemy.Integer, default=0)
-    size = sqlalchemy.Column(sqlalchemy.Integer, default=0)
+    weight = sqlalchemy.Column(sqlalchemy.String, default=0)
+    size = sqlalchemy.Column(sqlalchemy.String, default=0)
