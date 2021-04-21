@@ -259,12 +259,13 @@ def user_page(user_id):
 def make_order(customer_id, goods_id):
     db_sess = db_session.create_session()
     order = Order(
-        id=len(db_sess.query(Order)) + 1,
+        id=len(db_sess.query(Order).all()) + 1,
         customer_id=customer_id,
         goods_id=goods_id
     )
     db_sess.add(order)
     db_sess.commit()
+    return redirect('/catalog')
 
 
 def main():
