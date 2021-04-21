@@ -3,3 +3,14 @@
 2021-04-21 22:03:46,489 INFO werkzeug  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
 2021-04-21 22:04:17,791 INFO werkzeug  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
 2021-04-21 22:52:15,659 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-04-21 23:10:37,919 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-21 23:10:47,871 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-21 23:11:03,872 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-21 23:11:16,454 INFO werkzeug  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2021-04-21 23:14:18,066 INFO werkzeug  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+2021-04-21 23:14:39,142 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:14:39] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-21 23:14:41,616 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:14:41] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-21 23:14:44,690 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:14:44] "[37mGET /add_goods HTTP/1.1[0m" 200 -
+2021-04-21 23:15:24,367 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:15:24] "[32mPOST /add_goods HTTP/1.1[0m" 302 -
+2021-04-21 23:15:24,395 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:15:24] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-21 23:15:24,463 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:15:24] "[37mGET /static/img/goods_img/6.jpg HTTP/1.1[0m" 200 -
