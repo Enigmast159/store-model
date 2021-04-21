@@ -307,7 +307,8 @@ def user_page(user_id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(user_id)
     orders = db_sess.query(Order).filter(Order.customer == user).all()
-    return render_template('user_page.html', item=user, title=f'Товар: {user.name}', orders=orders)
+    return render_template('user_page.html', item=user,
+                           title=f'Пользователь: {user.name} {user.surname}', orders=orders)
 
 
 @app.route('/make_order/<int:customer_id>/<int:goods_id>')
@@ -315,7 +316,6 @@ def user_page(user_id):
 def make_order(customer_id, goods_id):
     db_sess = db_session.create_session()
     order = Order(
-        id=len(db_sess.query(Order).all()) + 1,
         customer_id=customer_id,
         goods_id=goods_id
     )
