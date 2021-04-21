@@ -1,5 +1,4 @@
-from flask import Flask, render_template, redirect, request, abort, url_for
-from json import dump, load
+from flask import Flask, render_template, redirect, request, abort
 from forms.registration import RegisterForm
 from forms.login import LoginForm
 from forms.add_goods import AddGoods
@@ -180,11 +179,11 @@ def add_goods():
     return render_template('add_goods.html', title='Добавление товара', form=form)
 
 
-@app.route('/delete_goods/<int:id>', methods=['GET', 'POST'])
+@app.route('/delete_goods/<int:goods_id>', methods=['GET', 'POST'])
 @login_required
-def delete_goods(id):
+def delete_goods(goods_id):
     db_sess = db_session.create_session()
-    goods = db_sess.query(Goods).filter(Goods.id == id).first()
+    goods = db_sess.query(Goods).filter(Goods.id == goods_id).first()
     if goods:
         db_sess.delete(goods)
         db_sess.commit()
@@ -193,12 +192,12 @@ def delete_goods(id):
     return redirect('/catalog')
 
 
-@app.route('/edit_goods/<int:id>', methods=['GET', 'POST'])
+@app.route('/edit_goods/<int:goods_id>', methods=['GET', 'POST'])
 @login_required
-def edit_goods(id):
+def edit_goods(goods_id):
     form = AddGoods()
     session = db_session.create_session()
-    goods = session.query(Goods).filter(Goods.id == id, Goods.seller == current_user).first()
+    goods = session.query(Goods).filter(Goods.id == goods_id, Goods.seller == current_user).first()
     if request.method == 'GET':
         if goods:
             form.name.data = goods.name
@@ -225,12 +224,12 @@ def edit_goods(id):
     return render_template('add_goods.html', title='Редактирование товара', form=form)
 
 
-@app.route('/item_page/<int:id>', methods=['POST', 'GET'])
+@app.route('/item_page/<int:goods_id>', methods=['POST', 'GET'])
 @login_required
-def item_page(id):
+def item_page(goods_id):
     form = AddComms()
     db_sess = db_session.create_session()
-    item = db_sess.query(Goods).get(id)
+    item = db_sess.query(Goods).get(goods_id)
     comms = db_sess.query(Comment).filter(Comment.goods == item).all()
     if form.validate_on_submit():
         comm = Comment(
@@ -247,17 +246,17 @@ def item_page(id):
                            comments=comms, form=form)
 
 
-@app.route('/user_page/<int:id>')
+@app.route('/user_page/<int:user_id>')
 @login_required
-def user_page(id):
+def user_page(user_id):
     db_sess = db_session.create_session()
-    user = db_sess.query(User).get(id)
+    user = db_sess.query(User).get(user_id)
     return render_template('user_page.html', item=user, title=f'Товар: {user.name}')
 
 
 @app.route('/make_order/<int:customer_id>/<int:goods_id>')
 @login_required
-def add_goods(customer_id, goods_id):
+def make_order(customer_id, goods_id):
     db_sess = db_session.create_session()
     order = Order(
         id=len(db_sess.query(Order)) + 1,
