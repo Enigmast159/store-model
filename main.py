@@ -239,6 +239,8 @@ def delete_goods(goods_id):
 def edit_goods(goods_id):
     form = AddGoods()
     session = db_session.create_session()
+    items = session.query(Category).all()
+    form.select.choices = [(item.id, item.name) for item in items]
     goods = session.query(Goods).filter(Goods.id == goods_id, Goods.seller == current_user).first()
     if request.method == 'GET':
         if goods:
@@ -327,4 +329,4 @@ def make_order(customer_id, goods_id):
 if __name__ == '__main__':
     global_init("db/trading_area.db")
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=port)

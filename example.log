@@ -15,3 +15,904 @@
 2021-04-21 23:15:24,395 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:15:24] "[37mGET /catalog HTTP/1.1[0m" 200 -
 2021-04-21 23:15:24,463 INFO werkzeug 127.0.0.1 - - [21/Apr/2021 23:15:24] "[37mGET /static/img/goods_img/6.jpg HTTP/1.1[0m" 200 -
 2021-04-21 23:31:11,503 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-04-23 20:52:36,533 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-04-23 20:53:10,343 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 20:53:19,396 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:53:19] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:53:19,465 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:53:19] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:53:19,492 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:53:19] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:54:59,625 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:54:59] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:54:59,671 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:54:59] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:54:59,684 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:54:59] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:54:59,936 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:54:59] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:55:09,390 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:55:09] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:55:09,450 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:55:09] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:55:09,470 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:55:09] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:55:09,700 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:55:09] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:57:03,805 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:03] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:57:03,861 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:57:03,887 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:03] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:57:04,227 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:04] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:57:18,410 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:18] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:57:18,450 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:18] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:57:18,468 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:18] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:57:18,699 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:57:18] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:58:45,473 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:58:45] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:58:45,522 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:58:45] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:58:45,549 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:58:45] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:58:45,836 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:58:45] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:59:08,357 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:08] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:59:08,397 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:59:08,417 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:08] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:59:08,701 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:08] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:59:16,995 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:16] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:59:17,051 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:17] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:59:17,067 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:17] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:59:17,265 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:17] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:59:40,046 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:40] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:59:40,094 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:40] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:59:40,113 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:40] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:59:40,370 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:40] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 20:59:47,514 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:47] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 20:59:47,565 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:47] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 20:59:47,573 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:47] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 20:59:47,771 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 20:59:47] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:01:08,947 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:08] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:01:08,994 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:01:09,009 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:09] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:01:09,227 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:09] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:01:11,192 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:11] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:01:11,232 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:11] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:01:11,249 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:11] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:01:11,535 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:11] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,367 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,412 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,420 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,587 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,655 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,701 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,712 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,856 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,928 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:01:12,938 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:12] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:01:13,188 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:13] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:01:17,864 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:17] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:01:17,914 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:17] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:01:17,924 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:17] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:01:18,094 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:18] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:01:18,446 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:18] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:01:18,487 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:18] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:01:18,504 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:18] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:01:18,686 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:01:18] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:02:20,087 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:02:20] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:02:20,135 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:02:20] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:02:20,144 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:02:20] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:02:20,418 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:02:20] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:03:30,340 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:03:32,110 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:03:32] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:03:32,161 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:03:32] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:03:32,174 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:03:32] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:03:32,500 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:03:32] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:05:03,906 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:05:05,609 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:05] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:05:05,651 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:05] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:05:05,668 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:05] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:05:05,895 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:05] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:05:06,756 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:06] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:05:06,799 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:06] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:05:06,809 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:06] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:05:06,983 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:06] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,100 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,148 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,160 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,336 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,341 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,389 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,402 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,556 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,600 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,610 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,814 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,858 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:05:07,874 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:07] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:05:08,119 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:08] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:05:24,412 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:24] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:05:24,451 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:05:24,465 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:24] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:05:24,660 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:05:24] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:14:45,014 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:14:49,246 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:14:49] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:14:49,307 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:14:49] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:14:49,319 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:14:49] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:14:49,558 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:14:49] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:16:43,386 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:43] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:16:43,431 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:43] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:16:43,450 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:43] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:16:43,685 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:43] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:16:52,487 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:52] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:16:52,529 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:52] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:16:52,542 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:52] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:16:52,761 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:16:52] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:17:21,276 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:17:21] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:17:21,322 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:17:21] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:17:21,335 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:17:21] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:17:21,552 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:17:21] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:18:07,248 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:18:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:18:07,293 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:18:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:18:07,310 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:18:07] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:18:07,563 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:18:07] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:19:27,349 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:19:27] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:19:27,401 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:19:27] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:19:27,419 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:19:27] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:19:27,656 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:19:27] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:20:17,985 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:20:19,947 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:20:19] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:20:19,998 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:20:19] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:20:20,018 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:20:20] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:20:20,323 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:20:20] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:21:08,644 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:08] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:21:08,679 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:21:08,695 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:08] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:21:08,935 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:08] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:21:46,025 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:21:49,018 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:49] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:21:49,065 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:49] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:21:49,080 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:49] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:21:49,401 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:21:49] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:23:01,372 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:23:03,259 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:03] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:23:03,308 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:23:03,323 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:03] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:23:03,608 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:03] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:23:26,795 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:23:29,818 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:29] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:23:29,866 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:29] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:23:29,883 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:29] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:23:30,160 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:23:30] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:26:56,178 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:27:00,465 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:27:00] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:27:00,514 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:27:00] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:27:00,525 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:27:00] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:27:00,803 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:27:00] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:28:05,491 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:28:07,235 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:28:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:28:07,495 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:28:07] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:29:27,842 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:29:30,176 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:29:30] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:29:30,218 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:29:30] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:29:30,238 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:29:30] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:29:30,495 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:29:30] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:30:34,123 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:30:36,304 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:30:36] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:30:36,538 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:30:36] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:31:28,109 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:31:29,925 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:31:29] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:31:29,967 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:31:29] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:31:29,984 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:31:29] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:31:30,268 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:31:30] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:33:24,988 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:33:27,401 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:27] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:33:27,451 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:27] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:33:27,467 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:27] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:33:27,799 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:27] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:33:40,004 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:33:41,364 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:41] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:33:41,415 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:41] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:33:41,436 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:41] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:33:41,787 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:41] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:33:47,061 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:33:48,387 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:48] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:33:48,436 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:48] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:33:48,459 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:48] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:33:48,780 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:33:48] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:34:25,044 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:34:25] "[37mGET /register HTTP/1.1[0m" 200 -
+2021-04-23 21:34:30,802 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:34:30] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:34:37,642 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:34:37] "[37mGET /register HTTP/1.1[0m" 200 -
+2021-04-23 21:34:43,640 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:34:43] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:42:08,639 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:42:11,108 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:42:11] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:42:11,152 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:42:11] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:42:11,165 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:42:11] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:42:54,813 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:42:54] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:42:54,875 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:42:54] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:42:54,896 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:42:54] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:44:31,161 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:44:31] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:44:31,225 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:44:31] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:44:31,252 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:44:31] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:45:36,754 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:45:36] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:45:36,805 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:45:36] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:45:36,822 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:45:36] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:46:32,670 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:46:32] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:46:32,720 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:46:32] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:46:32,744 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:46:32] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:46:48,020 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:46:48] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:46:48,073 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:46:48] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:46:48,087 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:46:48] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:47:23,528 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:23] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:47:23,580 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:23] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:47:23,596 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:23] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:47:30,403 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:30] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:47:30,458 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:30] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:47:30,470 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:30] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:47:47,914 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:47] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:47:47,970 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:47] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:47:47,984 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:47] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:47:55,811 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:55] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:47:55,865 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:55] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:47:55,877 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:47:55] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:48:14,816 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:48:14] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:48:14,866 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:48:14] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:48:14,885 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:48:14] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:48:36,176 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:48:36] "[37mGET /register HTTP/1.1[0m" 200 -
+2021-04-23 21:48:51,116 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:48:51] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 21:49:19,290 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:49:19] "[37mGET /register HTTP/1.1[0m" 200 -
+2021-04-23 21:49:50,647 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:49:50] "[32mPOST /register HTTP/1.1[0m" 302 -
+2021-04-23 21:49:50,703 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:49:50] "[37mGET /login HTTP/1.1[0m" 200 -
+2021-04-23 21:49:59,448 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:49:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2021-04-23 21:49:59,460 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:49:59] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:50:02,492 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:50:02] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 21:50:41,471 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:50:51,660 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:50:51] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 21:50:51,715 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:50:51] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:50:57,122 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:50:57] "[32mGET /logout HTTP/1.1[0m" 302 -
+2021-04-23 21:50:57,137 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:50:57] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:51:19,954 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:51:32,088 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:51:34,245 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:51:34] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:51:34,562 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:51:34] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:51:39,280 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:51:39] "[37mGET /login HTTP/1.1[0m" 200 -
+2021-04-23 21:51:44,194 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:51:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2021-04-23 21:51:44,203 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:51:44] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:51:48,917 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:51:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2021-04-23 21:51:48,925 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:51:48] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:54:18,977 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:18] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:54:19,040 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:19] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:54:19,079 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:19] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:54:19,555 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:19] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:54:57,193 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:57] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:54:57,243 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:57] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:54:57,265 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:57] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:54:57,612 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:54:57] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:55:04,598 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:04] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:55:04,644 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:04] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:55:04,681 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:04] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:55:05,047 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:05] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:55:09,851 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:09] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:55:09,903 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:09] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:55:09,936 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:09] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:55:10,313 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:55:10] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:58:15,057 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:15] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:58:15,141 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:15] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:58:15,184 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:15] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:58:15,635 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:15] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:58:25,872 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:25] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:58:25,929 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:25] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:58:25,955 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:25] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:58:26,439 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:26] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:58:41,647 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:41] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:58:41,704 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:41] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:58:41,733 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:41] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:58:42,090 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:58:42] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:59:05,919 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:05] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:05,971 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:05] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:06,003 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:06] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:06,354 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:06] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:59:07,813 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:07,871 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:07,908 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:07] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:08,194 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:08] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:08,262 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:08,287 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:08] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:08,552 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:08] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:08,628 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:08,652 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:08] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:08,827 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:08] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:09,015 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:09] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:09,102 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:09] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:09,157 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:09] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:09,778 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:09] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:59:12,935 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 21:59:14,581 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:14] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:14,632 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:14] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:14,657 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:14] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:14,992 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:14] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:59:24,268 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:24] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:24,321 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:24,352 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:24] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:24,927 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:24] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:59:28,029 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:28] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:28,080 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:28] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:28,102 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:28] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:28,493 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:28] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 21:59:38,470 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:38] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 21:59:38,525 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:38] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 21:59:38,553 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:38] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 21:59:38,898 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 21:59:38] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:00:59,063 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:00:59] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:00:59,113 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:00:59] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:00:59,143 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:00:59] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:00:59,519 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:00:59] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:02:03,529 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:02:06,732 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:06] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:02:06,790 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:06] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:02:06,815 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:06] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:02:07,162 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:07] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:02:20,062 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:20] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:02:20,114 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:20] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:02:20,141 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:20] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:02:20,540 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:20] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:02:25,065 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:25] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:02:25,154 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:25] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:02:25,228 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:25] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:02:25,579 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:02:25] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:03:27,461 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:03:27] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:03:27,530 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:03:27] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:03:27,564 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:03:27] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:03:27,950 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:03:27] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:09:52,919 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:09:52] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:09:52,993 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:09:52] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:09:53,054 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:09:53] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:09:53,437 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:09:53] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:10:33,790 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:33] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:10:33,836 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:33] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:10:33,862 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:33] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:10:34,255 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:34] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:10:45,549 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:45] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:10:45,620 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:45] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:10:45,655 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:45] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:10:46,043 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:46] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:10:55,323 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:55] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:10:55,405 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:55] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:10:55,432 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:55] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:10:55,920 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:10:55] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:11:03,910 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:03] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:11:03,968 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:11:03,997 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:03] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:11:04,441 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:04] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:11:20,949 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:20] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:11:21,003 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:21] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:11:21,029 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:21] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:11:21,414 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:21] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:11:26,986 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:26] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:11:27,042 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:27] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:11:27,066 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:27] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:11:27,439 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:11:27] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:12:28,964 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:12:28] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:12:29,021 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:12:29] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:12:29,050 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:12:29] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:12:29,414 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:12:29] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:13:18,755 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:18] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:13:18,820 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:18] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:13:18,850 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:18] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:13:19,279 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:19] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:13:55,320 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:55] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:13:55,382 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:55] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:13:55,411 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:55] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:13:55,860 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:13:55] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:18:51,290 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:18:51] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:18:51,338 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:18:51] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:18:51,358 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:18:51] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:18:51,656 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:18:51] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:24:25,923 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:25] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:24:25,979 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:25] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:24:25,995 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:25] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:24:26,266 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:26] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:24:36,717 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:36] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:24:36,753 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:36] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:24:36,775 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:36] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:24:36,987 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:24:36] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:25:50,942 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:25:50] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:25:50,987 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:25:50] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:25:51,000 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:25:51] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:25:51,208 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:25:51] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:27:22,317 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:27:26,461 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:26] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:27:26,515 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:26] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:27:26,531 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:26] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:27:26,751 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:26] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:27:35,894 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:35] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:27:35,959 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:35] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:27:35,970 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:35] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:27:36,136 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:36] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:27:37,534 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:37] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:27:37,712 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:37] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:27:49,085 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:49] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:27:49,132 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:49] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:27:49,150 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:49] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:27:49,360 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:27:49] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:29:06,581 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:29:06] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:29:06,652 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:29:06] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:29:06,674 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:29:06] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:29:06,755 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:29:06] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:29:06,899 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:29:06] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:31:01,624 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:31:03,107 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:31:03] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:31:03,145 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:31:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:31:03,162 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:31:03] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:31:03,257 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:31:03] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:31:03,415 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:31:03] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:32:35,293 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:35] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:32:35,356 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:35] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:32:35,395 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:35] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:32:35,503 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:35] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:32:35,639 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:35] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:32:39,971 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:32:41,832 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:41] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:32:41,877 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:41] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:32:41,888 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:41] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:32:41,970 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:41] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:32:42,067 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:42] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:32:43,280 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:43] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:32:43,323 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:43] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:32:43,339 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:43] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:32:43,507 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:43] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:32:43,595 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:43] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:32:57,490 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:57] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:32:57,536 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:57] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:32:57,549 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:57] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:32:57,621 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:57] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:32:57,799 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:32:57] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:34:05,887 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:34:07,408 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:34:07,455 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:34:07,482 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:07] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:34:07,558 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:07] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:34:07,689 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:07] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:34:09,437 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:09] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:34:09,484 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:09] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:34:09,499 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:09] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:34:09,583 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:09] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:34:09,685 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:34:09] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:35:01,422 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:01] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:35:01,486 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:01] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:35:01,497 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:01] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:35:01,563 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:01] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:35:01,699 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:01] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:35:03,795 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:03] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:35:03,842 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:35:03,857 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:03] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:35:03,928 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:03] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:35:04,031 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:04] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:35:04,508 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:04] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:35:04,552 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:04] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:35:04,566 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:04] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:35:04,639 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:04] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:35:04,740 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:04] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:35:05,027 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:05] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:35:05,076 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:05] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:35:05,090 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:05] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:35:05,174 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:05] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:35:05,253 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:05] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:35:58,065 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:58] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:35:58,128 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:58] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:35:58,156 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:58] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:35:58,232 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:58] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:35:58,527 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:35:58] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:36:52,732 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:36:54,372 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:36:54] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:36:54,428 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:36:54] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:36:54,452 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:36:54] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:36:54,520 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:36:54] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:36:54,755 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:36:54] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:37:20,414 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:37:22,991 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:22] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:37:23,040 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:23] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:37:23,060 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:23] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:37:23,137 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:23] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:37:23,360 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:23] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:37:46,504 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:46] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:37:46,551 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:46] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:37:46,578 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:46] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:37:46,649 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:46] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:37:46,848 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:37:46] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:39:12,042 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:12] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:39:12,105 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:12] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:39:12,122 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:12] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:39:12,187 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:12] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:39:12,358 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:12] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:39:26,939 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:26] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:39:26,975 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:26] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:39:26,987 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:26] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:39:27,050 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:27] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:39:27,172 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:27] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:39:31,064 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:31] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:39:31,109 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:31] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:39:31,119 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:31] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:39:31,199 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:31] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:39:31,291 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:39:31] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:40:35,703 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:35] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:40:35,746 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:35] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:40:35,760 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:35] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:40:35,834 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:35] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:40:35,995 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:35] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:40:47,108 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:47] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:40:47,142 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:47] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:40:47,156 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:47] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:40:47,216 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:47] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:40:47,350 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:40:47] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:41:43,159 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:41:43] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:41:43,201 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:41:43] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:41:43,213 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:41:43] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:41:43,278 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:41:43] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:41:43,406 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:41:43] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:41:59,988 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:41:59] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:42:00,036 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:00] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:42:00,048 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:00] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:42:00,117 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:00] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:42:00,261 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:00] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:42:06,829 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:06] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:42:06,879 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:06] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:42:06,895 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:06] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:42:06,985 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:06] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:42:07,071 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:42:07] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:43:35,784 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:43:35] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:43:35,831 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:43:35] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:43:35,843 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:43:35] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:43:35,917 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:43:35] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:43:36,044 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:43:36] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:44:27,014 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:27] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:44:27,075 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:27] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:44:27,098 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:27] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:44:27,167 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:27] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:44:27,334 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:27] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:44:41,361 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:41] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:44:41,407 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:41] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:44:41,422 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:41] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:44:41,484 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:41] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:44:41,622 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:44:41] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:45:01,643 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:01] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:45:01,685 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:01] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:45:01,714 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:01] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:45:01,774 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:01] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:45:01,936 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:01] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:45:15,771 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:15] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:45:15,814 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:15] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:45:15,831 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:15] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:45:15,898 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:15] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:45:16,073 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:16] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:45:22,678 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:22] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:45:22,717 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:22] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:45:22,730 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:22] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:45:22,808 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:22] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:45:22,919 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:22] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:45:52,511 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:52] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:45:52,556 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:52] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:45:52,576 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:52] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:45:52,639 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:52] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:45:52,812 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:45:52] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:46:24,980 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:24] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:46:25,023 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:25] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:46:25,044 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:25] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:46:25,111 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:25] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:46:25,248 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:25] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:46:30,379 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:30] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:46:30,423 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:30] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:46:30,442 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:30] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:46:30,508 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:30] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:46:30,609 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:30] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:46:41,239 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:41] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:46:41,285 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:41] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:46:41,294 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:41] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:46:41,361 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:41] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 22:46:41,495 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:46:41] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 22:47:33,033 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:33] "[37mGET /register HTTP/1.1[0m" 200 -
+2021-04-23 22:47:34,158 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:34] "[37mGET /login HTTP/1.1[0m" 200 -
+2021-04-23 22:47:36,410 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2021-04-23 22:47:36,418 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:36] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 22:47:38,032 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:38] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 22:47:39,772 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:39] "[37mGET /add_goods HTTP/1.1[0m" 200 -
+2021-04-23 22:47:45,306 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:45] "[32mPOST /add_goods HTTP/1.1[0m" 302 -
+2021-04-23 22:47:45,342 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:45] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 22:47:45,405 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:45] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:47:51,702 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:51] "[37mGET /add_goods HTTP/1.1[0m" 200 -
+2021-04-23 22:47:56,588 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:56] "[32mPOST /add_goods HTTP/1.1[0m" 302 -
+2021-04-23 22:47:56,611 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:47:56] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 22:49:12,446 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:12] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 22:49:12,485 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:12] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:49:12,497 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:12] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:49:25,644 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:25] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 22:49:25,679 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:25] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:49:25,696 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:25] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:49:27,153 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:27] "[37mGET /add_goods HTTP/1.1[0m" 200 -
+2021-04-23 22:49:31,614 ERROR main Exception on /add_goods [POST]
+Traceback (most recent call last):
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Users/home/Desktop/Проекты/python projects/2 year/store-model-project/main.py", line 205, in add_goods
+    current_user.goods.append(goods)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\attributes.py", line 294, in __get__
+    return self.impl.get(instance_state(instance), dict_)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\attributes.py", line 730, in get
+    value = self.callable_(state, passive)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\sqlalchemy\orm\strategies.py", line 717, in _load_for_state
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Parent instance <User at 0x15bb3a0> is not bound to a Session; lazy load operation of attribute 'goods' cannot proceed (Background on this error at: http://sqlalche.me/e/13/bhk3)
+2021-04-23 22:49:31,709 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:31] "[35m[1mPOST /add_goods HTTP/1.1[0m" 500 -
+2021-04-23 22:49:31,870 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-23 22:49:43,383 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:43] "[32mPOST /add_goods HTTP/1.1[0m" 302 -
+2021-04-23 22:49:43,409 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:43] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 22:49:48,342 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:48] "[37mGET /add_goods HTTP/1.1[0m" 200 -
+2021-04-23 22:49:57,012 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:57] "[32mPOST /add_goods HTTP/1.1[0m" 302 -
+2021-04-23 22:49:57,037 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:49:57] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 22:50:24,815 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:50:24] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:51:33,170 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:51:35,345 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:51:35] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:51:35,397 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:51:35] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:51:35,414 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:51:35] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:51:43,280 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:51:44,747 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:51:44] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:51:44,790 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:51:44] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:51:44,805 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:51:44] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:51:58,744 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:52:00,198 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:52:00] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:52:00,242 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:52:00] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:52:00,253 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:52:00] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:52:23,510 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:52:23] "[37mPOST /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:53:16,750 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:53:20,441 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:53:20] "[37mPOST /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:53:20,486 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:53:20] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:53:20,497 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:53:20] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:53:42,271 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:53:44,922 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:53:44] "[37mPOST /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:53:44,976 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:53:44] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:53:44,989 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:53:44] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:53:48,715 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:53:48] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:55:21,143 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:55:23,210 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:55:23] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:55:32,002 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:55:33,842 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:55:33] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:55:33,883 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:55:33] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 22:55:33,893 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:55:33] "[37mGET /static/img/goods_img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 22:58:33,432 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:58:35,398 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:58:35] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 22:59:51,286 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 22:59:52,962 ERROR main Exception on /item_page/4 [GET]
+Traceback (most recent call last):
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Users/home/Desktop/Проекты/python projects/2 year/store-model-project/main.py", line 287, in item_page
+    return render_template('item_page.html', item=item, title=f'Товар: {item.name}',
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\home\Desktop\Проекты\python projects\2 year\store-model-project\templates\item_page.html", line 9, in template
+    {% if item.size is not None %}
+jinja2.exceptions.TemplateAssertionError: no test named 'None'
+2021-04-23 22:59:53,009 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:59:53] "[35m[1mGET /item_page/4 HTTP/1.1[0m" 500 -
+2021-04-23 22:59:53,201 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:59:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-23 22:59:57,431 ERROR main Exception on /item_page/4 [GET]
+Traceback (most recent call last):
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Users/home/Desktop/Проекты/python projects/2 year/store-model-project/main.py", line 287, in item_page
+    return render_template('item_page.html', item=item, title=f'Товар: {item.name}',
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\home\AppData\Local\Programs\Python\Python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\home\Desktop\Проекты\python projects\2 year\store-model-project\templates\item_page.html", line 9, in template
+    {% if item.size is not None %}
+jinja2.exceptions.TemplateAssertionError: no test named 'None'
+2021-04-23 22:59:57,433 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 22:59:57] "[35m[1mGET /item_page/4 HTTP/1.1[0m" 500 -
+2021-04-23 23:00:18,807 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:00:20,526 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:00:20] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 23:01:30,905 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:01:33,656 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:01:33] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 23:02:03,800 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:02:05,912 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:05] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 23:02:14,439 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:14] "[32mGET /comment_delete/3/4 HTTP/1.1[0m" 302 -
+2021-04-23 23:02:14,462 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:14] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 23:02:16,076 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:16] "[32mGET /comment_delete/2/4 HTTP/1.1[0m" 302 -
+2021-04-23 23:02:16,100 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:16] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 23:02:17,280 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:17] "[32mGET /comment_delete/1/4 HTTP/1.1[0m" 302 -
+2021-04-23 23:02:17,301 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:17] "[37mGET /item_page/4 HTTP/1.1[0m" 200 -
+2021-04-23 23:02:19,957 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:19] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:02:22,983 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:22] "[32mGET /delete_goods/4 HTTP/1.1[0m" 302 -
+2021-04-23 23:02:23,009 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:23] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:02:24,581 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:24] "[32mGET /delete_goods/3 HTTP/1.1[0m" 302 -
+2021-04-23 23:02:24,610 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:24] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:02:26,501 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:26] "[37mGET /item_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:02:31,461 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:02:31] "[37mGET /edit_goods/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:03:31,375 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:03:32,780 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:03:32] "[37mGET /edit_goods/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:03:43,440 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:03:43] "[32mPOST /edit_goods/1 HTTP/1.1[0m" 302 -
+2021-04-23 23:03:43,483 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:03:43] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:03:46,221 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:03:46] "[37mGET /item_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:04:40,211 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:04:40] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:05:20,403 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:05:21,862 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:05:21] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:05:22,786 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:05:22] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:06:02,087 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:06:04,580 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:06:04] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:06:06,180 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:06:06] "[37mGET /item_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:06:08,850 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:06:08] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:06:49,470 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:06:51,573 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:06:51] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:07:08,130 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:07:09,408 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:07:09] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:07:45,831 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:07:45] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:07:51,242 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:07:51] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:08:57,857 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:08:57] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:08:57,912 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:08:57] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 23:08:57,923 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:08:57] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 23:08:58,004 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:08:58] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 23:09:02,312 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:02] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:09:05,814 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:05] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:09:07,532 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:07] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:09:32,035 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:32] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:09:32,097 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:32] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 23:09:32,126 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:32] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 23:09:32,194 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:32] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 23:09:42,106 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:42] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:09:49,249 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:09:49] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:12:52,551 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:12:56,034 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:12:56] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:12:59,486 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:12:59] "[37mGET /user_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:12:59,558 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:12:59] "[37mGET /static/img/user_img/1.jpg HTTP/1.1[0m" 200 -
+2021-04-23 23:13:43,042 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:13:45,868 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:13:45] "[37mGET /user_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:14:12,709 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:14:14,367 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:14] "[37mGET /user_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:14:14,418 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:14] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 23:14:14,426 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:14] "[37mGET /static/img/user_img/1.jpg HTTP/1.1[0m" 200 -
+2021-04-23 23:14:24,999 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:14:26,458 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:26] "[37mGET /user_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:14:26,506 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:26] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 23:14:26,516 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:26] "[37mGET /static/img/user_img/1.jpg HTTP/1.1[0m" 200 -
+2021-04-23 23:14:31,961 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:31] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:14:33,227 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:33] "[37mGET /item_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:14:52,270 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:14:54,358 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:14:54] "[37mGET /item_page/1 HTTP/1.1[0m" 200 -
+2021-04-23 23:15:02,858 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:15:02] "[37mGET /catalog HTTP/1.1[0m" 200 -
+2021-04-23 23:15:08,486 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:15:08] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:16:41,333 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:16:44,877 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:16:44] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:17:10,344 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:17:12,144 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:17:12] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:17:12,193 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:17:12] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 23:17:12,207 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:17:12] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 23:17:12,280 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:17:12] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 23:18:32,427 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:18:34,504 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:18:34] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:19:57,604 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:20:00,354 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:20:00] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:20:12,666 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:20:14,217 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:20:14] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:20:47,837 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:20:49,489 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:20:49] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:22:24,637 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:22:27,998 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:22:27] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:22:45,042 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:22:47,182 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:22:47] "[37mGET /about_us HTTP/1.1[0m" 200 -
+2021-04-23 23:23:06,006 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:23:06] "[33mGET /t.me/simple_school_bot HTTP/1.1[0m" 404 -
+2021-04-23 23:23:06,193 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:23:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-04-23 23:23:32,376 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:23:39,645 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:23:39] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:24:01,338 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:24:01] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:24:39,270 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:24:41,003 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:24:41] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:24:41,200 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:24:41] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:25:09,171 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:25:10,510 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:25:10] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:25:10,731 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:25:10] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:25:18,812 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:25:20,354 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:25:20] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:25:20,542 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:25:20] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:28:08,758 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:28:10,113 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:28:10] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:28:10,285 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:28:10] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:28:44,960 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:28:46,531 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:28:46] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:28:46,765 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:28:46] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:29:40,899 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:29:42,939 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:29:42] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:29:43,198 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:29:43] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:29:50,930 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:29:52,408 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:29:52] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:29:52,585 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:29:52] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:30:02,724 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:30:04,051 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:30:04] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:30:04,239 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:30:04] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:30:28,132 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:30:30,808 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:30:30] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:30:31,008 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:30:31] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:30:39,281 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:30:40,797 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:30:40] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:30:41,006 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:30:41] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:31:04,231 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:31:05,429 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:31:05] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:31:05,619 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:31:05] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:31:23,319 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:31:24,550 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:31:24] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:31:24,790 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:31:24] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:31:37,497 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:31:37,937 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:31:37] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:31:38,150 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:31:38] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:32:56,788 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:32:59,011 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:32:59] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:32:59,235 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:32:59] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:33:28,749 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:33:30,193 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:33:30] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:33:30,405 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:33:30] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:33:54,688 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:33:56,169 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:33:56] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:33:56,394 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:33:56] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:34:46,589 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:34:48,021 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:34:48] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:34:48,260 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:34:48] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:35:14,396 INFO werkzeug  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-23 23:35:15,961 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:15] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:35:16,169 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:16] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-04-23 23:35:18,147 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET / HTTP/1.1[0m" 200 -
+2021-04-23 23:35:18,184 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-04-23 23:35:18,195 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-04-23 23:35:18,294 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
+2021-04-23 23:35:18,394 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -

@@ -2,61 +2,70 @@
 
 {% block content %}
 <div class="intro">
+
     <h1 class="intro__title">О проекте</h1>
-    <p class="intro__inner display-6">Здесь вы можете найти информацию о нашем проекте</p>
+    <p class="intro__inner">Данный проект представляет собой некую модель магазина, где можно зарегестрироваться и войти,
+    а также добавить покупки в корзину и добавлять новые продаваемые предметы.</p>
+    <div class="filter"></div>
 </div>
-<div class="section__header mt-5">
-    <h3 class="section__suptitle">About project</h3>
-    <h2 class="section__title m-3">Данный проект представляет собой некую модель магазина, где можно зарегестрироваться и войти,
-    а также добавить покупки в корзину и добавлять новые продаваемые предметы.</h2>
-</div>
-<section class="section">
-    <div class="container">
 
-        <div class="section__header">
-            <h3 class="section__suptitle">Who we are</h3>
-            <h2 class="section__title">Встречайте нашу команду</h2>
-            <div class="section__text">
-                <p class="align">Наша команда усердно трудилась, чтобы вы всегда были довольны результатом. </p>
-            </div>
-        </div>
 
-        <section class="section m-0 p-0">
-        <div class="sub__card">
-            <div class="card__inner">
-                <div class="card__img p-3">
-                    <img src="{{ url_for('static', filename='img/pepe.gif')}}">
-                </div>
-                <div class="card__info">
-                        <div class="card__name">Савин Григорий</div>
-                        <div class="card__prof">Разработчик</div>
-                </div>
-            </div>
-        </div>
-        <div class="sub__card">
-            <div class="card__inner">
-                <div class="card__img p-3">
-                    <img src="{{ url_for('static', filename='img/pepe.gif')}}">
-                </div>
-                <div class="card__info">
-                        <div class="card__name">Лямин Дмитрий</div>
-                        <div class="card__prof">Разработчик</div>
-                </div>
-            </div>
-        </div>
-        <div class="sub__card">
-            <div class="card__inner">
-                <div class="card__img p-3">
-                    <img src="{{ url_for('static', filename='img/pepe.gif')}}">
-                </div>
-                <div class="card__info">
-                        <div class="card__name">Гуреев матвей</div>
-                        <div class="card__prof">Разработчик</div>
-                </div>
-            </div>
-        </div>
-        </section>
+<div class="align mt-3">
+    <h3 class="title">Who we are</h3>
+    <h2 class="suptitle">Встречайте нашу команду</h2>
+    <div class="text">
+        <h5 class="align">Наша команда усердно трудилась, чтобы вы всегда были довольны результатом. </h5>
     </div>
-</section>
+</div>
 
+    <div class="container align">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/pepe.gif')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Гуреев матвей</h5>
+                  <p class="card-text">Разработчик API</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/pepe.gif')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Лямин Дмитрий</h5>
+                  <p class="card-text">Разработчик сайта</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="{{ url_for('static', filename='img/pepe.gif')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Савин Григорий</h5>
+                  <p class="card-text">Разработчик бота</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+<div class="filler"></div>
+<div class="align m-5">
+    <h3 class="title">Releat to the project</h3>
+    <h2 class="suptitle">Если вы заинтересовались нашим проектом, то у нас еть также API и бот.</h2>
+    <div class="text">
+        <h5 class="align">У нас есть бот для телеграмма, у которого есть несколько интересных функций.
+            Вы можете найти его по ссылке <a href="https://t.me/simple_school_bot">t.me/simple_school_bot</a></h5>
+        <h5 class="align">Помимо бота, если вы хотите использовать наш магазин в своих целях, вы можете использовать наше API.</h5>
+        <h2 class="suptitle mt-3">Вот небольшая документация к API</h2>
+        <h5>Чтобы получить все экземпляры одного типа введите команду образца:
+/api/<название типа>
+Типы:
+users(пользователи), goods(товары), orders(заказы), comments(комментарии).<br>
+Чтобы получить один экземпляр введите:
+/api/<название типа>/<номер id>.<br>
+Если вы хотите добавить экземпляр, то помимо id необходимо будет ввести и другие параметры
+/api/<название типа>/<номер id>/<параметр 1>/<параметр 2></h5>
+    </div>
+</div>
 {% endblock %}

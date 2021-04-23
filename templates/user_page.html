@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="section">
+<div class="section mt-5">
     <img src="{{ url_for('static', filename='img/user_img/{}'.format(item.photo_id))}}">
     <div class="cont">
         <p class="section__title">{{item.name}} {{item.surname}}</p>
-        <p class="section__suptitle">О себе: {{item.about}}</p>
-        <p class="section__suptitle">Почта: {{item.email}}</p>
-        <p class="section__suptitle">Дата рождения: {{item.birthdate}}</p>
-        <p class="section__suptitle">Дата создания аккаунта: {{item.created_date}}</p>
+        <p class="text display-6">О себе: {{item.about}}</p>
+        <p class="text display-6">Почта: {{item.email}}</p>
+        <p class="text display-6">Дата рождения: {{item.birthdate}}</p>
+        <p class="text display-6">Дата создания аккаунта: {{item.created_date}}</p>
         {% if current_user == item %}
         <a href="/edit_user/{{item.id}}" class="btn btn-outline-success">Изменить</a>
         {% endif %}

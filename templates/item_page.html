@@ -1,13 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="section">
+<div class="section mt-5">
     <img src="{{ url_for('static', filename='img/goods_img/{}'.format(item.photo_id))}}">
     <div class="cont">
         <p class="section__title">{{item.name}}</p>
-        <p class="section__suptitle">Описание: {{item.about}}</p>
-        <p class="section__suptitle">Размеры: {{item.size}}</p>
-        <p class="section__suptitle">Вес: {{item.weight}}</p>
+        <p class="text display-6">Описание: {{item.about}}</p>
+        {% if item.size != '' %}
+        <p class="text display-6">Размеры: {{item.size}}</p>
+        {% endif %}
+        {% if item.weight != '' %}
+        <p class="text display-6">Вес: {{item.weight}}</p>
+        {% endif %}
+        <p class="text display-4">{{item.price}}$</p>
         <a class="btn btn-outline-success" href="/make_order/{{current_user.id}}/{{item.id}}">Купить</a>
     </div>
 </div>
