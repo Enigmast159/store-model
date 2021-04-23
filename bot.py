@@ -2,24 +2,26 @@ import datetime
 import random
 import sqlite3
 from telegram.ext import Updater, MessageHandler, Filters
-from telegram.ext import CallbackContext, CommandHandler
+from telegram.ext import CommandHandler
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
-
+from requests import get
 
 TOKEN = '1720450815:AAFwgom5PsIguFBYTFvsEJnok0IejNpAC_E'
 state = 1
 
 
-def greeting(update, context):
-    global state
-    global name
-    state = 2
-    name = update.message.chat.first_name
-    reply_keyboard = [['давай', 'нехочу']]
-    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
-    update.message.reply_text('Приветствую вас! Я бот консультант магазина pepeShop!')
-    update.message.reply_text(f'Вас зовут {name}, не так ли?')
-    update.message.reply_text('Рекомендую посетить наш сайт!', reply_markup=markup)
+def main():
+    updater = Updater(TOKEN, use_context=True)
+    dp = updater.dispatcher
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("help", help))
+    dp.add_handler(CommandHandler("end", end))
+    dp.add_handler(CommandHandler("rename", rename))
+    dp.add_handler(CommandHandler("add_joke", add_joke))
+    dp.add_handler(CommandHandler("site", site))
+    dp.add_handler(MessageHandler(Filters.text, text))
+    updater.start_polling()
+    updater.idle()
 
 
 def first_choice(update, context):
@@ -80,17 +82,16 @@ def site_choice(update, context):
         skills(update, context)
 
 
-def main():
-    updater = Updater(TOKEN, use_context=True)
-    dp = updater.dispatcher
-    dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("help", help))
-    dp.add_handler(CommandHandler("end", end))
-    dp.add_handler(CommandHandler("rename", rename))
-    dp.add_handler(CommandHandler("add_joke", add_joke))
-    dp.add_handler(MessageHandler(Filters.text, text))
-    updater.start_polling()
-    updater.idle()
+def site(update, context):
+    update.message.reply_text(
+        "Сайт: http://store-model.herokuapp.com/")
+
+
+def end(update, context):
+    global state
+    update.message.reply_text('Диалог окончен!')
+    state = 3
+    close_keyboard(update, context)
 
 
 def text(update, context):
@@ -145,6 +146,7 @@ def start(update, context):
 def help(update, context):
     update.message.reply_text("Я владею некоторыми функциями:")
     update.message.reply_text("/start - запускает или перезапускает программу")
+    update.message.reply_text("/site - ссылка на сайт")
     update.message.reply_text("/end - заканчивает программу")
     update.message.reply_text("/add_joke - добавляет шутку, которую будет рассказывать бот")
     update.message.reply_text('/rename - позволяет смнеить имя по'
@@ -153,8 +155,14 @@ def help(update, context):
                               ' я к вам по имене не обращаюсь')
 
 
-def close_keyboard(update, context):
-    update.message.reply_text('Пока', reply_markup=ReplyKeyboardRemove())
+def greeting(update, context):
+    global state
+    state = 2
+    reply_keyboard = [['давай', 'нехочу']]
+    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
+    update.message.reply_text('Приветствую вас! Я бот консультант магазина pepeShop!')
+    update.message.reply_text(f'Вас зовут update.message.chat.first_name, не так ли?')
+    update.message.reply_text('Рекомендую посетить наш сайт!', reply_markup=markup)
 
 
 def persuade(update, context):
@@ -182,22 +190,22 @@ def games(update, context):
     markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     update.message.reply_text('Во что вы хотите поиграть?', reply_markup=markup)
     update.message.reply_text('Камень, ножницы, бумага.')
-    update.message.reply_text('Ним.')
+    update.message.reply_text('Угадай число')
 
 
 def s_p_s(update, context):
     global state
     game_list = ['камень', 'ножницы', 'бумага', 'мне надоело']
+    bot_list = ['камень', 'ножницы', 'бумага']
     player = update.message.text
     if not (player in game_list):
         return
-    print(player)
     if update.message.text == 'мне надоело':
         state = 4
         update.message.reply_text('Ок')
         skills_again(update, context)
         return
-    bot = random.choice(game_list)
+    bot = random.choice(bot_list)
     update.message.reply_text(bot)
     if player == bot:
         update.message.reply_text('ничья')
@@ -244,18 +252,6 @@ def guess_number(update, context):
         return
 
 
-def site(update, context):
-    update.message.reply_text(
-        "Сайт: http://127.0.0.1:8080/")
-
-
-def end(update, context):
-    global state
-    update.message.reply_text('Диалог окончен!')
-    state = 3
-    close_keyboard(update, context)
-
-
 def skills(update, context):
     reply_keyboard = [['Игры'], ['Время'], ['Шутки'], ['/help'],
                       ['Расскажи о сайте.'], ['/end']]
@@ -300,21 +296,33 @@ def about_site(update, context):
 
 
 def goods(update, context):
-    con = sqlite3.connect("db/trading_area.db")
-    cur = con.cursor()
-    result = cur.execute("""SELECT name, price FROM goods """).fetchall()
-    for i in result:
-        update.message.reply_text(f'предмет: {i[0]}, цена: {i[1]}')
-    update.message.reply_text(f'Кстати, в последние время товар:{random.choice(result)[0]} '
-                              f'очень популярен. Рекомендую купить')
+    goods = get('http://store-model.herokuapp.com/api/goods').json()
+    if not goods['goods']:
+        update.message.reply_text('К сожалению на данный момент на торговой площадке нет'
+                                  ' товаров, но вы все еще можете перейти туда и'
+                                  ' выставить на продажу свой товар.')
+        site(update, context)
+        return
+    for i in range(len(goods['goods'])):
+        good_price = goods['goods'][i]['price']
+        good_name = goods['goods'][i]['name']
+        update.message.reply_text(f'предмет: {good_name}, цена: {good_price}')
+        goods_num = i + 1
+    if goods_num >= 3:
+        update.message.reply_text(f'Кстати, в последние времятовар:'
+                                  f' {goods["goods"][random.randint(0, goods_num)]["name"]}'
+                                  f'очень популярен. Рекомендую купить')
     update.message.reply_text('Более подробную информацию о товарах ты найдешь на сайте.')
     site(update, context)
-    con.close()
 
 
 def users(update, context):
     update.message.reply_text('Неужели ты думаешь что я буду распростронять'
                               ' информацию о наших клиянтах. Никогда!')
+
+
+def close_keyboard(update, context):
+    update.message.reply_text('Пока', reply_markup=ReplyKeyboardRemove())
 
 
 if __name__ == '__main__':
