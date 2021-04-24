@@ -1,18 +1,10 @@
 from . import db_session
 from .goods import Goods
-from datetime import datetime
 from flask import abort, jsonify
 from flask_restful import reqparse, Resource
 
 parser = reqparse.RequestParser()
 parser.add_argument('id', required=True, type=int)
-parser.add_argument('seller_id', required=True, type=int)
-parser.add_argument('price', required=True, type=int)
-parser.add_argument('name', required=True, type=str)
-parser.add_argument('about', required=False, type=str)
-parser.add_argument('class_name', required=False, type=str)
-parser.add_argument('weight', required=False, type=int)
-parser.add_argument('size', required=False, type=str)
 
 
 def abort_if_user_not_found(goods_id):

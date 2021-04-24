@@ -5,8 +5,6 @@ from flask_restful import reqparse, Resource
 
 parser = reqparse.RequestParser()
 parser.add_argument('id', required=True, type=int)
-parser.add_argument('customer_id', required=True, type=int)
-parser.add_argument('goods_id', required=True, type=int)
 
 
 def abort_if_order_not_found(order_id):

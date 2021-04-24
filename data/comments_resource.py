@@ -4,9 +4,7 @@ from flask import abort, jsonify
 from flask_restful import reqparse, Resource
 
 parser = reqparse.RequestParser()
-parser.add_argument('id', required=True, type=int)
-parser.add_argument('goods_id', required=True, type=int)
-parser.add_argument('message', required=True, type=str)
+parser.add_argument('msg_id', required=True, type=int)
 
 
 def abort_if_comment_not_found(msg_id):

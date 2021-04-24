@@ -1,18 +1,10 @@
 from . import db_session
 from .users import User
-from datetime import datetime
 from flask import abort, jsonify
 from flask_restful import reqparse, Resource
 
 parser = reqparse.RequestParser()
 parser.add_argument('id', required=True, type=int)
-parser.add_argument('name', required=True, type=str)
-parser.add_argument('surname', required=True, type=str)
-parser.add_argument('email', required=True, type=str)
-parser.add_argument('about', required=False, type=str)
-parser.add_argument('hashed_password', required=False, type=str)
-parser.add_argument('created_date', required=False, type=datetime.date)
-parser.add_argument('birthdate', required=False, type=datetime.date)
 
 
 def abort_if_user_not_found(user_id):
