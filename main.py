@@ -1,3 +1,4 @@
+# Импорт всех необходимых библиотек и файлов
 from flask import Flask, render_template, redirect, request, abort
 from forms.registration import RegisterForm
 from forms.login import LoginForm
@@ -17,13 +18,13 @@ import datetime
 from data import goods_resource, order_resource, user_resource, comments_resource
 import os
 import logging
-
+# Логгирование уведомлений в отдельный файл
 logging.basicConfig(level=logging.INFO, filename='example.log',
                     format='%(asctime)s %(levelname)s %(name)s %(message)s')
-app = Flask(__name__)
+app = Flask(__name__)  # Создание приложения
 app.config['SECRET_KEY'] = 'my_secret_key'
-api = Api(app)
-
+api = Api(app)  # Создание api
+# Добавление ресурсов в api
 api.add_resource(goods_resource.GoodsListResource, '/api/goods')
 api.add_resource(goods_resource.GoodsResource, '/api/goods/<int:goods_id>')
 
@@ -39,18 +40,21 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 
 
+# Загрузка пользователя
 @login_manager.user_loader
 def load_user(user_id):
     db_sess = db_session.create_session()
     return db_sess.query(User).get(user_id)
 
 
+# Главная страница
 @app.route('/')
 @app.route('/about_us')
 def index():
     return render_template('about_us.html', title='Shop on the coach')
 
 
+# Страница регистрации
 @app.route('/register', methods=['GET', 'POST'])
 def reqister():
     form = RegisterForm()
@@ -91,12 +95,13 @@ def reqister():
     return render_template('register.html', title='Регистрация', form=form)
 
 
-@app.route('/edit_user/<int:id>', methods=['POST', 'GET'])
+# Страница изменения профиля
+@app.route('/edit_user/<int:user_id>', methods=['POST', 'GET'])
 @login_required
-def edit_user(id):
+def edit_user(user_id):
     form = RegisterForm()
     session = db_session.create_session()
-    user = session.query(User).filter(User.id == id).first()
+    user = session.query(User).filter(User.id == user_id).first()
     if request.method == 'GET':
         if user:
             form.name.data = user.name
@@ -122,13 +127,14 @@ def edit_user(id):
                     f.write(text)
             session.merge(user)
             session.commit()
-            return redirect(f'/user_page/{id}')
+            return redirect(f'/user_page/{user_id}')
         else:
             abort(404)
     msg = 'Вы можете редактировать только эти поля: имя, фамилия, почта, дата рождения, фото'
     return render_template('register.html', title='Редактирование профиля', form=form, msg=msg)
 
 
+# Страница авторизации пользователя
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
@@ -144,6 +150,7 @@ def login():
     return render_template('login.html', title='Авторизация', form=form)
 
 
+# Выход пользователя из аккаунта
 @app.route('/logout')
 @login_required
 def logout():
@@ -151,6 +158,7 @@ def logout():
     return redirect("/")
 
 
+# Каталог товаров
 @app.route('/catalog', methods=['POST', 'GET'])
 @login_required
 def catalog():
@@ -176,6 +184,7 @@ def catalog():
     return render_template('catalog.html', title='Каталог', goods=goods, form=form)
 
 
+# Страница добавления товаров
 @app.route('/add_goods', methods=['GET', 'POST'])
 @login_required
 def add_goods():
@@ -211,6 +220,7 @@ def add_goods():
     return render_template('add_goods.html', title='Добавление товара', form=form)
 
 
+# Удаление товара
 @app.route('/delete_goods/<int:goods_id>', methods=['GET', 'POST'])
 @login_required
 def delete_goods(goods_id):
@@ -224,6 +234,7 @@ def delete_goods(goods_id):
     return redirect('/catalog')
 
 
+# Изменение товара
 @app.route('/edit_goods/<int:goods_id>', methods=['GET', 'POST'])
 @login_required
 def edit_goods(goods_id):
@@ -258,6 +269,7 @@ def edit_goods(goods_id):
     return render_template('add_goods.html', title='Редактирование товара', form=form)
 
 
+# Страница товара
 @app.route('/item_page/<int:goods_id>', methods=['POST', 'GET'])
 @login_required
 def item_page(goods_id):
@@ -280,11 +292,12 @@ def item_page(goods_id):
                            comments=comms, form=form)
 
 
-@app.route('/comment_delete/<int:id>/<int:g_id>', methods=['POST', 'GET'])
+# Удаление комментария
+@app.route('/comment_delete/<int:comm_id>/<int:g_id>', methods=['POST', 'GET'])
 @login_required
-def comment_delete(id, g_id):
+def comment_delete(comm_id, g_id):
     db_sess = db_session.create_session()
-    comm = db_sess.query(Comment).get(id)
+    comm = db_sess.query(Comment).get(comm_id)
     if comm:
         db_sess.delete(comm)
         db_sess.commit()
@@ -293,6 +306,7 @@ def comment_delete(id, g_id):
     return redirect(f'/item_page/{g_id}')
 
 
+# Страница профиля пользователя
 @app.route('/user_page/<int:user_id>')
 @login_required
 def user_page(user_id):
@@ -303,6 +317,7 @@ def user_page(user_id):
                            title=f'Пользователь: {user.name} {user.surname}', orders=orders)
 
 
+# Оформление заказа
 @app.route('/make_order/<int:customer_id>/<int:goods_id>')
 @login_required
 def make_order(customer_id, goods_id):
@@ -316,6 +331,7 @@ def make_order(customer_id, goods_id):
     return redirect('/catalog')
 
 
+# Запуск
 if __name__ == '__main__':
     global_init("db/trading_area.db")
     port = int(os.environ.get("PORT", 5000))
