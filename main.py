@@ -25,26 +25,16 @@ app.config['SECRET_KEY'] = 'my_secret_key'
 api = Api(app)
 
 api.add_resource(goods_resource.GoodsListResource, '/api/goods')
-api.add_resource(
-    goods_resource.GoodsResource,
-    '/api/good/<int:id>/<int:seller_id>/<int:price>/' +
-    '<string:name>/<string:about>/<string:class_name>/<int:weight>/<string:size>')
+api.add_resource(goods_resource.GoodsResource, '/api/goods/<int:goods_id>')
 
 api.add_resource(order_resource.OrderListResource, '/api/orders')
-api.add_resource(
-    order_resource.OrderResource,
-    '/api/order/<int:id>/<int:customer_id>/<int:goods_id>')
+api.add_resource(order_resource.OrderResource, '/api/orders/<int:order_id>')
 
 api.add_resource(user_resource.UsersListResource, '/api/users')
-api.add_resource(
-    user_resource.UserResource,
-    '/api/user/<int:id>/<string:name>/<string:surname>/<string:email>/' +
-    '<string:about>/<string:hashed_password>/<string:created_date>/<string:birthdate>')
+api.add_resource(user_resource.UserResource, '/api/users/<int:user_id>')
 
 api.add_resource(comments_resource.CommentListResource, '/api/comments')
-api.add_resource(
-    comments_resource.CommentResource,
-    '/api/comment/<int:id>/<int:goods_id>/<string:message>')
+api.add_resource(comments_resource.CommentResource, '/api/comments/<int:msg_id>')
 login_manager = LoginManager()
 login_manager.init_app(app)
 
