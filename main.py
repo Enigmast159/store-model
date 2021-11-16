@@ -51,7 +51,7 @@ def load_user(user_id):
 @app.route('/')
 @app.route('/about_us')
 def index():
-    return render_template('about_us.html', title='Shop on the coach')
+    return render_template('about_us.html', title='DuckDuckShop')
 
 
 # Страница регистрации
@@ -301,7 +301,7 @@ def user_page(user_id):
     for i in arr:
         goods.append(db_sess.query(Goods).get(i))
     return render_template('user_page.html', item=user,
-                           title=f'DuckDuckShop', goods=goods, len=len(arr))
+                           title='DuckDuckShop', goods=goods, len=len(arr))
 
 
 # Оформление заказа
