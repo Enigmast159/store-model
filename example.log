@@ -916,3 +916,216 @@ jinja2.exceptions.TemplateAssertionError: no test named 'None'
 2021-04-23 23:35:18,195 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
 2021-04-23 23:35:18,294 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET /static/img/pepega.jpg HTTP/1.1[0m" 200 -
 2021-04-23 23:35:18,394 INFO werkzeug 127.0.0.1 - - [23/Apr/2021 23:35:18] "[37mGET /static/img/favicon.ico HTTP/1.1[0m" 200 -
+2021-10-16 22:30:45,194 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-10-16 22:30:56,034 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-10-16 22:31:31,500 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-10-19 20:21:06,556 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-10-19 20:21:15,721 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-11-12 13:42:25,706 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-11-12 13:42:28,496 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:28] "[37mGET / HTTP/1.1[0m" 200 -
+2021-11-12 13:42:28,677 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:28] "[33mGET /pictures/icons/instagram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:42:28,680 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:28] "[33mGET /pictures/icons/vk%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:42:28,683 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:28] "[33mGET /pictures/icons/telegram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:42:28,685 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:28] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 13:42:28,741 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:28] "[37mGET /static/img/pepe.gif HTTP/1.1[0m" 200 -
+2021-11-12 13:42:28,747 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:28] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2021-11-12 13:42:31,987 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:31] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 13:42:32,588 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:42:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-11-12 13:44:48,161 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-11-12 13:44:51,502 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[37mGET / HTTP/1.1[0m" 200 -
+2021-11-12 13:44:51,558 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/ducks-grid/ducks-grid.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,573 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/ducks-grid/ducks-grid-second.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,575 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/ducks-grid/ducks-grid-third.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,576 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,578 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/founder.jpeg HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,581 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/co-founder.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,586 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/designer.jpeg HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,591 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/icons/instagram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,595 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/icons/vk%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,606 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /pictures/icons/telegram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:44:51,731 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:44:51] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 13:52:50,306 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-11-12 13:52:54,443 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[37mGET / HTTP/1.1[0m" 200 -
+2021-11-12 13:52:54,492 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/ducks-grid/ducks-grid.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,529 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/ducks-grid/ducks-grid-second.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,531 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/ducks-grid/ducks-grid-third.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,533 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/founder.jpeg HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,534 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/co-founder.jpg HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,536 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/designer.jpeg HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,537 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,549 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/icons/instagram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,553 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/icons/vk%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,557 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /pictures/icons/telegram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 13:52:54,634 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:54] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 13:52:55,481 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 13:52:55] "[31m[1mGET /catalog HTTP/1.1[0m" 401 -
+2021-11-12 14:04:48,975 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-11-12 14:04:53,221 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[37mGET / HTTP/1.1[0m" 200 -
+2021-11-12 14:04:53,257 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/ducks-grid/ducks-grid.jpg HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,294 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/ducks-grid/ducks-grid-second.jpg HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,296 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/ducks-grid/ducks-grid-third.jpg HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,297 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/founder.jpeg HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,299 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/co-founder.jpg HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,301 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/designer.jpeg HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,302 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,316 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/icons/instagram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,320 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/icons/vk%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,324 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /pictures/icons/telegram%20icon.png HTTP/1.1[0m" 404 -
+2021-11-12 14:04:53,420 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:53] "[33mGET /static/script/main.js HTTP/1.1[0m" 404 -
+2021-11-12 14:04:55,189 ERROR main Exception on /login [GET]
+Traceback (most recent call last):
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\main.py", line 150, in login
+    return render_template('login.html', title='Авторизация', form=form)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line -1, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\base.html", line 126, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line -1, in block "content"
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\fields\core.py", line 160, in __call__
+    return self.meta.render_field(self, kwargs)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\meta.py", line 56, in render_field
+    return field.widget(field, **render_kw)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\widgets\core.py", line 161, in __call__
+    return Markup('<input %s>' % self.html_params(name=field.name, **kwargs))
+TypeError: wtforms.widgets.core.html_params() got multiple values for keyword argument 'name'
+2021-11-12 14:04:55,231 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:04:55] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2021-11-12 14:05:18,878 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-11-12 14:05:21,710 ERROR main Exception on /login [GET]
+Traceback (most recent call last):
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\main.py", line 150, in login
+    return render_template('login.html', title='Авторизация', form=form)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line -1, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\base.html", line 154, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line 71, in block "content"
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\fields\core.py", line 160, in __call__
+    return self.meta.render_field(self, kwargs)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\meta.py", line 56, in render_field
+    return field.widget(field, **render_kw)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\widgets\core.py", line 161, in __call__
+    return Markup('<input %s>' % self.html_params(name=field.name, **kwargs))
+TypeError: wtforms.widgets.core.html_params() got multiple values for keyword argument 'name'
+2021-11-12 14:05:21,715 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:05:21] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2021-11-12 14:05:29,640 ERROR main Exception on /login [GET]
+Traceback (most recent call last):
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\main.py", line 150, in login
+    return render_template('login.html', title='Авторизация', form=form)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line -1, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\base.html", line 154, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line -1, in block "content"
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\fields\core.py", line 160, in __call__
+    return self.meta.render_field(self, kwargs)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\meta.py", line 56, in render_field
+    return field.widget(field, **render_kw)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\widgets\core.py", line 161, in __call__
+    return Markup('<input %s>' % self.html_params(name=field.name, **kwargs))
+TypeError: wtforms.widgets.core.html_params() got multiple values for keyword argument 'name'
+2021-11-12 14:05:29,642 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:05:29] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2021-11-12 14:07:03,748 INFO werkzeug  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-11-12 14:07:11,353 ERROR main Exception on /login [GET]
+Traceback (most recent call last):
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\main.py", line 150, in login
+    return render_template('login.html', title='Авторизация', form=form)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line -1, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\base.html", line -71, in top-level template code
+  File "C:\Users\dimal\OneDrive\Рабочий стол\All\projects\store-model\templates\login.html", line 70, in block "content"
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\fields\core.py", line 160, in __call__
+    return self.meta.render_field(self, kwargs)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\meta.py", line 56, in render_field
+    return field.widget(field, **render_kw)
+  File "C:\Users\dimal\AppData\Local\Programs\Python\Python310\lib\site-packages\wtforms\widgets\core.py", line 161, in __call__
+    return Markup('<input %s>' % self.html_params(name=field.name, **kwargs))
+TypeError: wtforms.widgets.core.html_params() got multiple values for keyword argument 'name'
+2021-11-12 14:07:11,358 INFO werkzeug 127.0.0.1 - - [12/Nov/2021 14:07:11] "[35m[1mGET /login HTTP/1.1[0m" 500 -

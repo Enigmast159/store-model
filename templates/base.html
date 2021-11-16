@@ -2,63 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css')}}">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="icon" href="{{ url_for( 'static', filename='img/duck.ico')}}" type="image/x-icon">
+
+    <title>{{title}}</title>
 </head>
 <body>
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-      <a class="header__logo" href="#">PepeShop</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/about_us">О нас</a>
-          </li>
-          {% if current_user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link" href="/user_page/{{current_user.id}}">Профиль</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/catalog">Каталог</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/logout">Выйти</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="/login">Войти</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">Зарегистрироваться</a>
-          </li>
-          {% endif %}
+    <div class="header">
+        <div class="header__item">
+            <a href="/about_us" class="item__link item__logo">duckduckshop</a>
+        </div>
+        <ul class="items-list">
+            <li><a href="/catalog" class="item__link item__shop">shop</a></li>
+            <li><a href="/about_us" class="item__link item__news">news</a></li>
+            <li><a href="#social" class="item__link item__social">social</a></li>
+            {% if current_user.is_authenticated %}
+            <li><a href="/user_page/{{current_user.id}}" class="item__link item__shop">cart</a></li>
+            <li><a href="/logout" class="item__link item__login">logout</a></li>
+            {% else %}
+            <li><a href="/login" class="item__link item__login">login</a></li>
+            {% endif %}
         </ul>
-      </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+
+        </div>
     </div>
-  </nav>
+{% block content %} {% endblock %}
 
-    <main>
-        {% block content %} {% endblock %}
-    </main>
+        <footer class="footer">
+            <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__col  footer__col--first">
+                <div class="footer__logo">DuckDuckShop</div>
+                <div class="footer__text" id="social">Наши соцсети:</div>
+                <div class="footer__icons">
+                    <div class="footer__icon inst__icon"><a href="https://www.instagram.com/_duck.duck.shop_/"><img src="{{ url_for('static', filename='img/icons/instagram icon.png')}}" alt=""></a></div>
+                    <div class="footer__icon inst__icon"><a href="https://vk.com/nutiiipa"><img src="{{ url_for('static', filename='img/icons/vk icon.png')}}" alt=""></a></div>
+                    <div class="footer__icon inst__icon"><a href="https://t.me/PAnanasik"><img src="{{ url_for('static', filename='img/icons/telegram icon.png')}}" alt=""></a></div>
+                </div>
+            </div><!-- /.footer__col -->
+
+        <div class="footer__col  footer__col--second">
+            <div class="footer__title">Важная информация</div>
+
+            <div class="blogs__item">
+                <div class="blogs__content">
+                    <a class="blogs__title" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Реквизиты</a>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Реквизиты</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="section main">
+                                <div class="requisites">
+                                    <div class="container">
+                                        <!-- <h1 class="requisite__title">Наши реквизиты</h1> -->
+                                        <div class="requisites__items">
+                                            <div class="requisite__item requisite__item_main">Полное наименование:</div>
+                                            <div class="requisite__item">"DuckDuckShop"</div>
+                                            <div class="requisite__item requisite__item_main">Электронная почта:</div>
+                                            <div class="requisite__item">ilovezhenya228@gmail.com</div>
+                                            <div class="requisite__item requisite__item_main">Адрес склада:</div>
+                                            <div class="requisite__item">Владимирская область, г. Гусь-Хрустальный, Маяковского 2а, 26</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="requisites__btn-close" data-bs-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="blogs__item">
+                <div class="blogs__content">
+                    <a class="blogs__title" href="#">Важные даты</a>
+                </div>
+            </div>
+
+            <div class="blogs__item">
+                <div class="blogs__content">
+                    <a class="blogs__title" href="#">Другие наши проекты</a>
+                </div>
+            </div>
+        </div>
 
 
-     <div class="filler"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <div class="content">
-    <p class = "content__text">by dmitry x grandmatthew x grisha</p>
-    <p class = "content__text text-dark">&nbsp;and pananasik</p>
-</div>
+        </div><!-- /.footer__inner -->
+
+            </div><!-- /.container -->
+        </footer>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="{{ url_for( 'static', filename='script/main.js' )}}"></script>
 </body>
 </html>
-

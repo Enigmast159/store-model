@@ -3,80 +3,50 @@
 {% block content %}
 <h1>Регистрация</h1>
 <p>{{msg}}</p>
-<form action="" method="post" class="m-5 mt-3" enctype="multipart/form-data">
+<form action="" method="post" class="form__registration" enctype="multipart/form-data">
     {{ form.hidden_tag() }}
-    <p>
+
         {{ form.name.label }}<br>
-        {{ form.name(class="form-control") }}<br>
+        {{ form.name(type="name", class="name", id="name", placeholder="Ваше имя...") }}<br>
         {% for error in form.name.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
             </p>
         {% endfor %}
-    </p>
-    <p>
+
         {{ form.surname.label }}<br>
-        {{ form.surname(class="form-control") }}<br>
+        {{ form.surname(type="lname", class="lname", id="lname", placeholder="Ваша фамилия...") }}<br>
         {% for error in form.surname.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
             </p>
         {% endfor %}
-    </p>
-    <p>
+
         {{ form.email.label }}<br>
-        {{ form.email(class="form-control", type="email") }}<br>
+        {{ form.email(type="email", class="email", id="email", placeholder="Ваша почта...") }}<br>
         {% for error in form.email.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
             </p>
         {% endfor %}
-    <p>
+
         {{ form.password.label }}<br>
-        {{ form.password(class="form-control", type="password") }}<br>
+        {{ form.password(type="password", class="password", id="password", placeholder="Ваш пароль...") }}<br>
         {% for error in form.password.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
             </p>
         {% endfor %}
-    </p>
-    <p>
+
         {{ form.password_again.label }}<br>
-        {{ form.password_again(class="form-control", type="password") }}<br>
+        {{ form.password_again(type="password", class="repeat-password", id="repeat-password", placeholder="Повторите ваш пароль...") }}<br>
         {% for error in form.password_again.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
             </p>
         {% endfor %}
-    </p>
-    <p>
-        {{ form.bdate.label }}<br>
-        {{ form.bdate(class="form-control", type="date")}}<br>
-        {% for error in form.bdate.errors %}
-            <p class="alert alert-danger" role="alert">
-                {{ error }}
-            </p>
-        {% endfor %}
-    </p>
-    <p>
-        {{ form.about.label }}<br>
-        {{ form.about(class="form-control") }}<br>
-        {% for error in form.about.errors %}
-            <p class="alert alert-danger" role="alert">
-                {{ error }}
-            </p>
-        {% endfor %}
-    </p>
-    <p>
-        {{ form.photo.label }}<br>
-        {{ form.photo(class="form-control", type="file") }}<br>
-        {% for error in form.photo.errors %}
-            <div class="alert alert-danger" role="alert">
-                {{ error }}
-            </div>
-        {% endfor %}
-    </p>
-    <p>{{ form.submit(type="submit", class="btn btn-outline-dark") }}</p>
+
+        {{ form.submit(type="submit", class="submit") }}
     {{message}}
 </form>
 {% endblock %}

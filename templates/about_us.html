@@ -1,71 +1,122 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="intro">
 
-    <h1 class="intro__title">О проекте</h1>
-    <p class="intro__inner">Данный проект представляет собой некую модель магазина, где можно зарегестрироваться и войти,
-    а также добавить покупки в корзину и добавлять новые продаваемые предметы.</p>
-    <div class="filter"></div>
-</div>
+<main class="main">
+        <div class="intro">
+                <div class="intro__inner">
+                    <h2 class="intro__suptitle">Duckduckshop</h2>
+                    <h1 class="intro__title">Online store</h1>
 
-
-<div class="align mt-3">
-    <h3 class="title">Who we are</h3>
-    <h2 class="suptitle">Встречайте нашу команду</h2>
-    <div class="text">
-        <h5 class="align">Наша команда усердно трудилась, чтобы вы всегда были довольны результатом. </h5>
-    </div>
-</div>
-
-    <div class="container align">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="{{ url_for('static', filename='img/pepe.gif')}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Гуреев матвей</h5>
-                  <p class="card-text">Разработчик API</p>
+                    <a class="button" href="#whatwedo">Подробнее</a>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="{{ url_for('static', filename='img/pepe.gif')}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Лямин Дмитрий</h5>
-                  <p class="card-text">Разработчик сайта</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="{{ url_for('static', filename='img/pepe.gif')}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Савин Григорий</h5>
-                  <p class="card-text">Разработчик бота</p>
-                </div>
-              </div>
-            </div>
         </div>
-    </div>
-<div class="filler"></div>
-<div class="align m-5">
-    <h3 class="title">Releat to the project</h3>
-    <h2 class="suptitle">Если вы заинтересовались нашим проектом, то у нас еть также API и бот.</h2>
-    <div class="text">
-        <h5 class="align">У нас есть бот для телеграмма, у которого есть несколько интересных функций.
-            Вы можете найти его по ссылке <a href="https://t.me/simple_school_bot">t.me/simple_school_bot</a></h5>
-        <h5 class="align">Помимо бота, если вы хотите использовать наш магазин в своих целях, вы можете использовать наше API.</h5>
-        <h2 class="suptitle mt-3">Вот небольшая документация к API</h2>
-        <h5>Чтобы получить все экземпляры одного типа введите команду образца:
-/api/<название типа>
-Типы:
-users(пользователи), goods(товары), orders(заказы), comments(комментарии).<br>
-Чтобы получить один экземпляр введите:
-/api/<название типа>/<номер id>.<br>
-Если вы хотите добавить экземпляр, то помимо id необходимо будет ввести и другие параметры
-/api/<название типа>/<номер id>/<параметр 1>/<параметр 2></h5>
-    </div>
-</div>
+
+        <section class="section section_about" id="whatwedo">
+            <h3 class="suptitle__about">About us</h3>
+            <h2 class="title__about mb-5">Немного о нас</h2>
+                <div class="container">
+                    <div class="about">
+                        <div class="about__items">
+                                <div class="about__item about__item-first">Мы небольшая команда энтузиастов с непреодолимой симпатией к уточкам</div>
+                                <div class="about__item about__item-second"><img src="{{ url_for('static', filename='img/ducks-grid/ducks-grid.jpg') }}" alt="cute duck!"></div>
+
+
+                                <div class="about__item about__item-third"><span class="about__item-main">Главная наша цель</span> - производство качественной продукции с тематикой уточек</div>
+                                <div class="about__item about__item-fourth"><img src="{{ url_for('static', filename='img/ducks-grid/ducks-grid-second.jpg') }}" alt="very cute cat!"></div>
+
+
+
+                                <div class="about__item about__item-fifth">Каждый наш товар - это товар, сделанный с огромной <span class="about__item-love">любовью</span></div>
+                                <div class="about__item about__item-sixth"><img src="{{ url_for('static', filename='img/ducks-grid/ducks-grid-third.jpg') }}" alt="very very cute duck!"></div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- <div class="section_container mt-5">
+            <div class="section__items"> -->
+                <!-- <img src="https://media.discordapp.net/attachments/617066760880783426/899716626587451402/pexels-photo-9065691.png?width=820&height=547" class="section__about_img" alt=""> -->
+                <!-- <h3 class="section__suptitle">About</h3> -->
+                <!-- <div class="section__text_about">
+                    <p>Наша команда занимается производством самого качественного товара, связанного с уточками: носки, резиновые уточки для ванны, перчатки, штаны, шапочки и т.д. Мы настолько любим уточек, что готовы разделить нашу любовь, передаваемую через свои изделия, с вами!</p>
+                </div> -->
+            <!-- </div>
+        </div> -->
+        <!--
+        <div class="cards__container">
+            <div class="cards">
+                <div class="my__card">
+                    <img src="https://funart.pro/uploads/posts/2021-04/1618233299_15-p-milie-utochki-zhivotnie-krasivo-foto-16.jpg" class="card__img" alt="">
+                    <div class="card-body card__info">
+                        <h5 class="card__name">Наши носочки!</h5>
+                        <p class="card__prof">Все уточки ваши</p>
+                    </div>
+                </div>
+                <div class="my__card">
+                    <img src="https://funart.pro/uploads/posts/2021-04/1618233299_15-p-milie-utochki-zhivotnie-krasivo-foto-16.jpg" class="card__img" alt="">
+                    <div class="card-body card__info">
+                        <h5 class="card__name">Наша шапочка!</h5>
+                        <p class="card__prof">Вашу голову будет греть сила уточек!</p>
+                    </div>
+                </div>
+                <div class="my__card">
+                    <img src="https://funart.pro/uploads/posts/2021-04/1618233299_15-p-milie-utochki-zhivotnie-krasivo-foto-16.jpg" class="card__img" alt="">
+                    <div class="card-body card__info">
+                        <h5 class="card__name">Наши штаны!</h5>
+                        <p class="card__prof">Все внимание будет приковано к вам!</p>
+                    </div>
+                </div> -->
+
+
+            <!-- </div>
+        </div> -->
+
+        <section class="section section-card">
+            <div class="container">
+
+                <div class="section__header" id="whatwedo">
+                    <h3 class="section__suptitle">Our team</h3>
+                    <h2 class="section__title">Встречайте нашу команду</h2>
+                    <div class="section__text">
+                        <p>Мы каждый день усердно трудимся, чтобы вы всегда были довольны результатом. </p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-lg-3 g-4">
+                    <div class="col">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='img/founder.jpeg')}}" class="card-img-top" alt="...">
+                        <div class="card-body card__info">
+                        <h5 class="card-title card__name">Соловьев Евгений</h5>
+                        <p class="card-text card__prof">Web-programmer</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='img/co-founder.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body card__info">
+                        <h5 class="card-title card__name">Лямин Дмитрий</h5>
+                        <p class="card-text card__prof">Backend-programmer</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='img/designer.jpeg')}}" class="card-img-top" alt="...">
+                        <div class="card-body card__info">
+                        <h5 class="card-title card__name">Идричан Мария</h5>
+                        <p class="card-text card__prof">Designer, PR-manager</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </section>
+
+    </main> <!-- main -->
+
 {% endblock %}

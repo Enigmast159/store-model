@@ -17,10 +17,10 @@ from flask_login import LoginManager, login_user, logout_user, login_required, c
 import datetime
 from data import goods_resource, order_resource, user_resource, comments_resource
 import os
-import logging
+#import logging
 # Логгирование уведомлений в отдельный файл
-logging.basicConfig(level=logging.INFO, filename='example.log',
-                    format='%(asctime)s %(levelname)s %(name)s %(message)s')
+#logging.basicConfig(level=logging.INFO, filename='example.log',
+                    #format='%(asctime)s %(levelname)s %(name)s %(message)s')
 app = Flask(__name__)  # Создание приложения
 app.config['SECRET_KEY'] = 'my_secret_key'
 api = Api(app)  # Создание api
@@ -71,25 +71,10 @@ def reqister():
         user = User(
             name=form.name.data,
             surname=form.surname.data,
-            email=form.email.data,
-            created_date=datetime.datetime.now(),
-            about=form.about.data,
-            birthdate=form.bdate.data
+            email=form.email.data
         )
         user.set_password(form.password.data)
         db_sess.add(user)
-        db_sess.commit()
-        name = str(form.photo.data)
-        name = name.split('.')[-1].split("'")[0]
-        text = form.photo.data.read()
-        user = db_sess.query(User).all()[-1]
-        if str(text) == "b''":
-            user.photo_id = 'pepe.gif'
-        else:
-            user.photo_id = f'{user.id}.{name}'
-            with open(f'static/img/user_img/{user.photo_id}', 'wb') as f:
-                f.write(text)
-        db_sess.merge(user)
         db_sess.commit()
         return redirect('/login')
     return render_template('register.html', title='Регистрация', form=form)
@@ -143,7 +128,7 @@ def login():
         user = db_sess.query(User).filter(User.email == form.email.data).first()
         if user and user.check_password(form.password.data):
             login_user(user, remember=form.remember_me.data)
-            return redirect("/")
+            return redirect("/about_us")
         return render_template('login.html',
                                message="Неправильный логин или пароль",
                                form=form)
@@ -160,7 +145,6 @@ def logout():
 
 # Каталог товаров
 @app.route('/catalog', methods=['POST', 'GET'])
-@login_required
 def catalog():
     db_sess = db_session.create_session()
     form = Sort()
@@ -196,8 +180,6 @@ def add_goods():
         goods = Goods(
             name=form.name.data,
             about=form.about.data,
-            weight=form.weight.data,
-            size=form.size.data,
             price=form.price.data,
             category_id=form.select.data
         )
@@ -271,7 +253,6 @@ def edit_goods(goods_id):
 
 # Страница товара
 @app.route('/item_page/<int:goods_id>', methods=['POST', 'GET'])
-@login_required
 def item_page(goods_id):
     form = AddComms()
     db_sess = db_session.create_session()
@@ -313,8 +294,14 @@ def user_page(user_id):
     db_sess = db_session.create_session()
     user = db_sess.query(User).get(user_id)
     orders = db_sess.query(Order).filter(Order.customer == user).all()
+    arr = []
+    for item in orders:
+        arr.append(item.goods_id)
+    goods = []
+    for i in arr:
+        goods.append(db_sess.query(Goods).get(i))
     return render_template('user_page.html', item=user,
-                           title=f'Пользователь: {user.name} {user.surname}', orders=orders)
+                           title=f'DuckDuckShop', goods=goods, len=len(arr))
 
 
 # Оформление заказа
@@ -329,6 +316,19 @@ def make_order(customer_id, goods_id):
     db_sess.add(order)
     db_sess.commit()
     return redirect('/catalog')
+
+
+# Очищение корзины
+@app.route('/fresh_cart')
+@login_required
+def fresh_cart():
+    db_sess = db_session.create_session()
+    orders = db_sess.query(Order).filter(Order.customer == current_user).first()
+    while orders:
+        db_sess.delete(orders)
+        orders = db_sess.query(Order).filter(Order.customer == current_user).first()
+    db_sess.commit()
+    return redirect(f'/user_page/{current_user.id}')
 
 
 # Запуск

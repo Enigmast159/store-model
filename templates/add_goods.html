@@ -33,24 +33,6 @@
             {% endfor %}
         </p>
         <p>
-            {{ form.weight.label }}<br>
-            {{ form.weight(class="form-control") }}<br>
-            {% for error in form.weight.errors %}
-                <div class="alert alert-danger" role="alert">
-                    {{ error }}
-                </div>
-            {% endfor %}
-        </p>
-        <p>
-            {{ form.size.label }}<br>
-            {{ form.size(class="form-control") }}<br>
-            {% for error in form.size.errors %}
-                <div class="alert alert-danger" role="alert">
-                    {{ error }}
-                </div>
-            {% endfor %}
-        </p>
-        <p>
             {{ form.select.label }}<br>
             {{ form.select(class="form-control") }}<br>
             {% for error in form.select.errors %}
