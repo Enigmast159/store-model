@@ -10,14 +10,14 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-item active" data-bs-interval="4000">
                         <img src="{{ url_for('static', filename='img/carousel-slides/carousel-1.jpg') }}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none">
                             <h1 class="caption__title">Я это делал</h1>
                             <p>Два часа</p>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="10000">
+                    <div class="carousel-item" data-bs-interval="4000">
                         <img src="{{ url_for('static', filename='img/carousel-slides/carousel-2.jpg') }}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none">
                             <h1 class="caption__title">Я устал</h1>
@@ -25,14 +25,6 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Предыдущий</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Следующий</span>
-                </button>
             </div>
 
 
@@ -49,7 +41,7 @@
                             <a style="text-decoration: none;" href="/item_page/{{item.id}}">
                             <img src="{{ url_for('static', filename='img/goods_img/{}.jpg'.format(item.photo_id)) }}" class="card__img" alt="">
                             <div class="card-body card__info">
-                                <h5 class="card__price">{{item.price}} руб</h5>
+                                <h5 class="card__price">{{item.price}} ₽</h5>
                                     <p class="card__prof">{{item.name}}</p>
                             </div></a>
                         </div>
@@ -62,7 +54,6 @@
             <div class="action">
                     <div class="action__item">
                         <img src="{{ url_for('static', filename='img/for test1.jpg') }}" alt="" class="action__img1">
-                        <img src="{{ url_for('static', filename='img/for test2.jpg') }}" alt="" class="action__img2">
                     </div>
             </div>
 

@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Авторизация</h1>
     <div class="container">
     <div class="form_login">
         <form action="" method="post" method="get" class="form__login">
             {{ form.hidden_tag() }}
 
             {{ form.email.label }}<br>
-            {{ form.email(class="email", id="email", placeholder="Ваша почта...") }}<br>
+            {{ form.email(class="email mt-3 mb-3", id="email", placeholder="Ваша почта...") }}<br>
             {% for error in form.email.errors %}
                 <div class="alert alert-danger" role="alert">
                     {{ error }}
@@ -16,7 +15,7 @@
             {% endfor %}
 
             {{ form.password.label }}<br>
-            {{ form.password(type="password", class="password", id="password", placeholder="Ваш пароль...") }}<br>
+            {{ form.password(type="password", class="password mt-3 mb-3", id="password", placeholder="Ваш пароль...") }}<br>
             {% for error in form.password.errors %}
                 <div class="alert alert-danger" role="alert">
                     {{ error }}
@@ -26,8 +25,8 @@
             {{ form.remember_me(class="remember__box") }}
             {{ form.remember_me.label }}<br>
 
-            <p>{{ form.submit(type="submit", class="submit") }}</p>
-            <a href="/register" style="text-decoration: none" class="submit">Зарегестрироваться</a><br><br>
+            <p>{{ form.submit(type="submit", class="submit mt-3 mb-3") }}</p>
+            <a href="/register" style="text-decoration: none" class="submit">Зарегистрироваться</a><br><br>
             <div>{{ message }}</div>
         </form>
     </div><br>

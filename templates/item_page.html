@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="wrapper">
-    <main class="main">
         <div class="container">
             <h1 class="production__name mb-4 mt-5">{{item.name}}</h1>
             <div class="production__container">
                 <div class="img__container"><img src="{{ url_for('static', filename='img/goods_img/{}.jpg'.format(item.photo_id))}}" alt=""></div>
                 <div class="production__info">
-                    <h1 class="price__title mt-3">{{item.price}} Р</h1>
+                    <h1 class="price__title mt-3">{{item.price}} ₽</h1>
                     {% if current_user.is_authenticated %}
                     <a href="/make_order/{{current_user.id}}/{{item.id}}" class="button__text buy__button">Добавить в корзину</a>
                     {% endif %}
@@ -23,11 +21,15 @@
                 </div>
             </div>
         </div>
-    </main> <!-- main -->
-</div>
+        <div class="action">
+            <div class="action__item">
+                <img src="pictures/for test1.jpg" alt="" class="action__img1">
+                <img src="pictures/for test2.jpg" alt="" class="action__img2">
+            </div>
+        </div>
 <div class="container">
     {% if current_user.is_authenticated %}
-    <h2>Комментарии: </h2>
+    <h2>Отзывы: </h2>
     <form action="" method="post" class="mt-3">
         {{ form.hidden_tag() }}
         {{ form.csrf_token }}
@@ -40,7 +42,7 @@
                 </div>
             {% endfor %}
         </p>
-        <p>{{ form.submit(type="submit", class="btn btn-outline-dark") }}</p>
+        <p>{{ form.submit(type="submit", class="submit") }}</p>
         <div>{{ message }}</div>
     </form>
 

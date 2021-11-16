@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Регистрация</h1>
-<p>{{msg}}</p>
+
+<div class="container">
+    <p>{{msg}}</p>
+    <div class="form_registration">
 <form action="" method="post" class="form__registration" enctype="multipart/form-data">
     {{ form.hidden_tag() }}
 
         {{ form.name.label }}<br>
-        {{ form.name(type="name", class="name", id="name", placeholder="Ваше имя...") }}<br>
+        {{ form.name(type="name", class="name mt-3 mb-3", id="name", placeholder="Ваше имя...") }}<br>
         {% for error in form.name.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
@@ -15,7 +17,7 @@
         {% endfor %}
 
         {{ form.surname.label }}<br>
-        {{ form.surname(type="lname", class="lname", id="lname", placeholder="Ваша фамилия...") }}<br>
+        {{ form.surname(type="lname", class="lname mt-3 mb-3", id="lname", placeholder="Ваша фамилия...") }}<br>
         {% for error in form.surname.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
@@ -23,7 +25,7 @@
         {% endfor %}
 
         {{ form.email.label }}<br>
-        {{ form.email(type="email", class="email", id="email", placeholder="Ваша почта...") }}<br>
+        {{ form.email(type="email", class="email mt-3 mb-3", id="email", placeholder="Ваша почта...") }}<br>
         {% for error in form.email.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
@@ -31,7 +33,7 @@
         {% endfor %}
 
         {{ form.password.label }}<br>
-        {{ form.password(type="password", class="password", id="password", placeholder="Ваш пароль...") }}<br>
+        {{ form.password(type="password", class="password mt-3 mb-3", id="password", placeholder="Ваш пароль...") }}<br>
         {% for error in form.password.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
@@ -39,14 +41,16 @@
         {% endfor %}
 
         {{ form.password_again.label }}<br>
-        {{ form.password_again(type="password", class="repeat-password", id="repeat-password", placeholder="Повторите ваш пароль...") }}<br>
+        {{ form.password_again(type="password", class="repeat-password mt-3 mb-3", id="repeat-password", placeholder="Повторите ваш пароль...") }}<br>
         {% for error in form.password_again.errors %}
             <p class="alert alert-danger" role="alert">
                 {{ error }}
             </p>
         {% endfor %}
 
-        {{ form.submit(type="submit", class="submit") }}
+        {{ form.submit(type="submit", class="submit mt-3 mb-3") }}
     {{message}}
 </form>
+    </div>
+</div>
 {% endblock %}
